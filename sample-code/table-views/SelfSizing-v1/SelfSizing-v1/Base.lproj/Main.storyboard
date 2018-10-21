@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tJY-4f-4O4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Book Table View Controller-->
+        <scene sceneID="rCk-qe-hNe">
+            <objects>
+                <tableViewController storyboardIdentifier="LineTableViewController" id="T4q-gk-ewL" customClass="BookTableViewController" customModule="SelfSizing_v1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="15L-Ce-B6E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LineCell" rowHeight="80" id="xaf-dF-SlV" customClass="LineCell" customModule="SelfSizing_v1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xaf-dF-SlV" id="atJ-kt-WBl">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BNN-5I-Zl5">
+                                            <rect key="frame" x="16" y="11" width="343" height="58"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCG-dy-NCX">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="13.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" scrollEnabled="NO" editable="NO" text="Body text" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6pO-U3-17R">
+                                                    <rect key="frame" x="0.0" y="13.5" width="343" height="44.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="BNN-5I-Zl5" secondAttribute="trailing" id="LBS-RI-XbM"/>
+                                        <constraint firstItem="BNN-5I-Zl5" firstAttribute="top" secondItem="atJ-kt-WBl" secondAttribute="topMargin" id="SnE-HP-H4g"/>
+                                        <constraint firstItem="BNN-5I-Zl5" firstAttribute="leading" secondItem="atJ-kt-WBl" secondAttribute="leadingMargin" id="bIH-HT-hgC"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="BNN-5I-Zl5" secondAttribute="bottom" id="t4i-5m-krc"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lineLabel" destination="uCG-dy-NCX" id="gZJ-ul-4u6"/>
+                                    <outlet property="textView" destination="6pO-U3-17R" id="oqL-kl-JHY"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="T4q-gk-ewL" id="3vz-6Z-qLq"/>
+                            <outlet property="delegate" destination="T4q-gk-ewL" id="kyA-K8-3U7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="TJe-mg-jGV"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JvG-1M-TQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055.2" y="180.35982008995504"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Sbh-EB-XAk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tJY-4f-4O4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ba4-HL-e1v">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="T4q-gk-ewL" kind="relationship" relationship="rootViewController" id="HF3-ip-aDT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3bd-uo-2FI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="180.35982008995504"/>
+        </scene>
+    </scenes>
+</document>

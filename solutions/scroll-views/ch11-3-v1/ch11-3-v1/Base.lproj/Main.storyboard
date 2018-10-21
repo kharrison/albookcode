@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3mt-ra-qmC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Activity-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ActivityViewController" customModule="ch11_3_v1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKN-Sg-8fg" customClass="AdaptiveScrollView" customModule="ch11_3_v1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SlH-9c-WtB">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="458"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Ready!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyB-zb-COR" userLabel="Label">
+                                                <rect key="frame" x="8" y="8" width="359" height="67"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Skater" translatesAutoresizingMaskIntoConstraints="NO" id="t5x-RM-pew" userLabel="ImageView">
+                                                <rect key="frame" x="8" y="83" width="359" height="300"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCs-Mr-cK8" userLabel="Button">
+                                                <rect key="frame" x="8" y="391" width="359" height="59"/>
+                                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                                <state key="normal" title="Start">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SlH-9c-WtB" firstAttribute="leading" secondItem="FKN-Sg-8fg" secondAttribute="leading" id="5RO-8I-tud"/>
+                                    <constraint firstItem="SlH-9c-WtB" firstAttribute="width" secondItem="FKN-Sg-8fg" secondAttribute="width" id="7QR-MR-sBK"/>
+                                    <constraint firstAttribute="trailing" secondItem="SlH-9c-WtB" secondAttribute="trailing" id="Hvg-GF-oIl"/>
+                                    <constraint firstItem="SlH-9c-WtB" firstAttribute="top" secondItem="FKN-Sg-8fg" secondAttribute="top" id="JN5-ki-6Zu"/>
+                                    <constraint firstAttribute="bottom" secondItem="SlH-9c-WtB" secondAttribute="bottom" id="Zay-Ny-3lf"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="FKN-Sg-8fg" secondAttribute="bottom" id="Ntj-Xr-Et4"/>
+                            <constraint firstItem="FKN-Sg-8fg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cuL-nr-GYu"/>
+                            <constraint firstItem="FKN-Sg-8fg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dDJ-XY-EzJ"/>
+                            <constraint firstAttribute="trailing" secondItem="FKN-Sg-8fg" secondAttribute="trailing" id="jf7-oP-hG0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Activity" id="BZH-eu-Ccf"/>
+                    <connections>
+                        <outlet property="scrollView" destination="FKN-Sg-8fg" id="pVX-ay-XCp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1030" y="79"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xvn-pJ-W1c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3mt-ra-qmC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VUm-4x-elN">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3II-AY-WF8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UMY-1d-Zom" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="207" y="79"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Skater" width="300" height="300"/>
+    </resources>
+</document>

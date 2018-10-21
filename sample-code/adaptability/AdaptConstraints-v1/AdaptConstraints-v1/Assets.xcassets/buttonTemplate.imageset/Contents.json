@@ -1,0 +1,30 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "blue-button.pdf",
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 4,
+          "top" : 4,
+          "right" : 5,
+          "left" : 5
+        }
+      }
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "template-rendering-intent" : "template",
+    "preserves-vector-representation" : true
+  }
+}

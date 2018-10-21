@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ch12_2_v1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZe-Sh-z12">
+                                <rect key="frame" x="20" y="40" width="335" height="607"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RBl-Id-JBj">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="46.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Headline text style" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHb-wQ-7Ae" userLabel="Headline">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subheadline text style" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K96-bd-tM9" userLabel="Subheadline">
+                                                <rect key="frame" x="0.0" y="28.5" width="335" height="18"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RBl-Id-JBj" firstAttribute="width" secondItem="CZe-Sh-z12" secondAttribute="width" id="2VB-Ow-KWz"/>
+                                    <constraint firstItem="RBl-Id-JBj" firstAttribute="top" secondItem="CZe-Sh-z12" secondAttribute="top" id="Phv-Xx-hUh"/>
+                                    <constraint firstAttribute="trailing" secondItem="RBl-Id-JBj" secondAttribute="trailing" id="drP-Ay-JcH"/>
+                                    <constraint firstAttribute="bottom" secondItem="RBl-Id-JBj" secondAttribute="bottom" id="jn2-p1-5PC"/>
+                                    <constraint firstItem="RBl-Id-JBj" firstAttribute="leading" secondItem="CZe-Sh-z12" secondAttribute="leading" id="tNH-SR-gNY"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CZe-Sh-z12" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Yym-Tw-sjW"/>
+                            <constraint firstItem="CZe-Sh-z12" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="jFG-c0-AA6"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="CZe-Sh-z12" secondAttribute="bottom" id="s0D-lc-1IK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CZe-Sh-z12" secondAttribute="trailing" id="waC-bb-7lD"/>
+                        </constraints>
+                        <directionalEdgeInsets key="directionalLayoutMargins" top="20" leading="20" bottom="20" trailing="20"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="headlineLabel" destination="RHb-wQ-7Ae" id="lT1-es-3hE"/>
+                        <outlet property="subheadlineLabel" destination="K96-bd-tM9" id="61R-aD-fY9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

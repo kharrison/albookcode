@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CJC-GE-EtQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Quote-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="QuoteViewController" customModule="DynamicType_v3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" id="Wgs-qx-JMG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGI-ug-0Pa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LAq-MV-ybd">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="201"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chapter 1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWv-RJ-R7m">
+                                                <rect key="frame" x="20" y="20" width="335" height="20.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijA-bW-5Wm">
+                                                <rect key="frame" x="20" y="48.5" width="335" height="108.5"/>
+                                                <string key="text">My father's family name being Pirrip, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit than Pip. So, I called myself Pip, and came to be called Pip.</string>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great Expectations by Charles Dickens" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5l3-ZZ-0O7">
+                                                <rect key="frame" x="20" y="165" width="335" height="16"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="20" left="20" bottom="20" right="20"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="LAq-MV-ybd" firstAttribute="width" secondItem="KGI-ug-0Pa" secondAttribute="width" id="7Hm-iC-uXr"/>
+                                    <constraint firstAttribute="bottom" secondItem="LAq-MV-ybd" secondAttribute="bottom" id="As1-zB-nDN"/>
+                                    <constraint firstItem="LAq-MV-ybd" firstAttribute="top" secondItem="KGI-ug-0Pa" secondAttribute="top" id="JtR-k1-8gD"/>
+                                    <constraint firstItem="LAq-MV-ybd" firstAttribute="leading" secondItem="KGI-ug-0Pa" secondAttribute="leading" id="feV-9Z-yXv"/>
+                                    <constraint firstAttribute="trailing" secondItem="LAq-MV-ybd" secondAttribute="trailing" id="xhc-Ck-poZ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KGI-ug-0Pa" firstAttribute="top" secondItem="Wgs-qx-JMG" secondAttribute="top" id="IJg-aF-JNi"/>
+                            <constraint firstItem="KGI-ug-0Pa" firstAttribute="leading" secondItem="Wgs-qx-JMG" secondAttribute="leading" id="MyI-wk-NNJ"/>
+                            <constraint firstItem="KGI-ug-0Pa" firstAttribute="bottom" secondItem="Wgs-qx-JMG" secondAttribute="bottom" id="gxV-YP-xW2"/>
+                            <constraint firstItem="KGI-ug-0Pa" firstAttribute="trailing" secondItem="Wgs-qx-JMG" secondAttribute="trailing" id="pw8-9D-ERX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Rt-og-VZr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quote" id="DV7-Tp-oHd"/>
+                    <connections>
+                        <outlet property="footnoteLabel" destination="5l3-ZZ-0O7" id="Hsg-gV-ra3"/>
+                        <outlet property="textLabel" destination="ijA-bW-5Wm" id="wQh-5B-C95"/>
+                        <outlet property="titleLabel" destination="RWv-RJ-R7m" id="hCk-Sv-4EV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="-671"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RBl-xg-RD9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CJC-GE-EtQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JN9-Vy-vQY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Q2j-XA-qxp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nPp-Ty-kaF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="-670.61469265367316"/>
+        </scene>
+    </scenes>
+</document>

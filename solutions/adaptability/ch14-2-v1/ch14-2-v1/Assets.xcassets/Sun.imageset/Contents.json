@@ -1,0 +1,29 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "Sun150.pdf"
+    },
+    {
+      "idiom" : "universal",
+      "height-class" : "regular"
+    },
+    {
+      "idiom" : "universal",
+      "width-class" : "regular"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "Sun300.pdf",
+      "width-class" : "regular",
+      "height-class" : "regular"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

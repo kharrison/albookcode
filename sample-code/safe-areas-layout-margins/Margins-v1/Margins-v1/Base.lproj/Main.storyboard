@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5h4-dg-PlD">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Margins-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Margins" id="BYZ-38-t0r" customClass="ViewController" customModule="Margins_v1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1oj-k8-2Mg" userLabel="RedView">
+                                <rect key="frame" x="16" y="88" width="343" height="690"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJa-nD-5KR" userLabel="GreenView">
+                                        <rect key="frame" x="8" y="8" width="327" height="674"/>
+                                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hJa-nD-5KR" firstAttribute="top" secondItem="1oj-k8-2Mg" secondAttribute="topMargin" id="Uuw-28-ywB"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="hJa-nD-5KR" secondAttribute="bottom" id="Xtt-FE-PnI"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="hJa-nD-5KR" secondAttribute="trailing" id="lCY-Kz-YIy"/>
+                                    <constraint firstItem="hJa-nD-5KR" firstAttribute="leading" secondItem="1oj-k8-2Mg" secondAttribute="leadingMargin" id="uTj-A8-n8w"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1oj-k8-2Mg" firstAttribute="top" secondItem="YeA-Ez-CtZ" secondAttribute="top" id="D3Q-Bt-mRk"/>
+                            <constraint firstItem="YeA-Ez-CtZ" firstAttribute="bottom" secondItem="1oj-k8-2Mg" secondAttribute="bottom" id="O32-hk-Hh7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1oj-k8-2Mg" secondAttribute="trailing" id="OMr-Vr-Avv"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="1oj-k8-2Mg" secondAttribute="leading" id="eHR-kH-JRK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YeA-Ez-CtZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Margins" id="TSe-9i-D1g"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4781.6000000000004" y="-566.74876847290648"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1ur-99-4cq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5h4-dg-PlD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e8Y-w3-TXw">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rMe-AR-8Ts"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="85b-A0-7dX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3839.1999999999998" y="-566.74876847290648"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J7G-k4-6lN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animating StackView-->
+        <scene sceneID="68s-Go-LE9">
+            <objects>
+                <viewController id="qRD-xB-9Mz" customClass="ViewController" customModule="AnimatingStack_v2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jlg-yc-xv4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="aj5-o6-R3G">
+                                <rect key="frame" x="129" y="64" width="116" height="387"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JUX-1g-tPy">
+                                        <rect key="frame" x="33.5" y="16" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="axisChanged:" destination="qRD-xB-9Mz" eventType="valueChanged" id="XqF-Me-iGl"/>
+                                        </connections>
+                                    </switch>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7wG-ZR-S8V" userLabel="Image Stack View">
+                                        <rect key="frame" x="8" y="63" width="100" height="316"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart" translatesAutoresizingMaskIntoConstraints="NO" id="EBV-yD-hf7">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star" translatesAutoresizingMaskIntoConstraints="NO" id="m55-4n-gMS">
+                                                <rect key="frame" x="0.0" y="108" width="100" height="100"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DIamond" translatesAutoresizingMaskIntoConstraints="NO" id="xeE-wO-bqy">
+                                                <rect key="frame" x="0.0" y="216" width="100" height="100"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="16" left="8" bottom="8" right="8"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aj5-o6-R3G" firstAttribute="centerX" secondItem="sVX-Ml-yyS" secondAttribute="centerX" id="5tR-hq-rNw"/>
+                            <constraint firstItem="aj5-o6-R3G" firstAttribute="top" secondItem="sVX-Ml-yyS" secondAttribute="top" id="Gdc-cI-ZZx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sVX-Ml-yyS"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Animating StackView" id="jLs-93-LMA"/>
+                    <connections>
+                        <outlet property="axisSwitch" destination="JUX-1g-tPy" id="XTj-Uk-IIE"/>
+                        <outlet property="containerStackView" destination="aj5-o6-R3G" id="4o4-Vu-Y1Y"/>
+                        <outlet property="imageStackView" destination="7wG-ZR-S8V" id="cHH-Wj-S0V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QXf-7p-S5e" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2015.2" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4DM-tI-uZ2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J7G-k4-6lN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Uwb-jQ-p6V">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qRD-xB-9Mz" kind="relationship" relationship="rootViewController" id="SKh-j0-awI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v6q-ZC-LOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DIamond" width="100" height="100"/>
+        <image name="Heart" width="100" height="100"/>
+        <image name="Star" width="100" height="100"/>
+    </resources>
+</document>

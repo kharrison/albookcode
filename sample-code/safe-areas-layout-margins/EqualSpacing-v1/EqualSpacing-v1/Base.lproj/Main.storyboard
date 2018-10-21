@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14105" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EqualSpacing_v1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pU-6A-yKI" userLabel="Leading Spacer View">
+                                <rect key="frame" x="0.0" y="318" width="43" height="50"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8j6-ZK-x8f"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2L5-K1-lqo">
+                                <rect key="frame" x="43" y="317.5" width="123" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
+                                <state key="normal" title="Cancel" backgroundImage="buttonTemplate">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PQg-fj-a1U"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fNy-wB-vwL" userLabel="Middle Spacer View">
+                                <rect key="frame" x="166" y="318.5" width="43" height="50"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xsr-6g-p6c"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXq-NB-iOY">
+                                <rect key="frame" x="209" y="317.5" width="123" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
+                                <state key="normal" title="OK" backgroundImage="buttonTemplate">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="okAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wpd-a1-PmM"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PXY-HD-bwD" userLabel="Trailing Spacer View">
+                                <rect key="frame" x="332" y="318" width="43" height="50"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="skT-fu-xy8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="fXq-NB-iOY" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="65x-vZ-CgN"/>
+                            <constraint firstItem="0pU-6A-yKI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6i3-iS-heF"/>
+                            <constraint firstItem="fNy-wB-vwL" firstAttribute="leading" secondItem="2L5-K1-lqo" secondAttribute="trailing" id="7Sl-lP-UhL"/>
+                            <constraint firstItem="fNy-wB-vwL" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="9Gb-ow-3cb"/>
+                            <constraint firstItem="PXY-HD-bwD" firstAttribute="width" secondItem="0pU-6A-yKI" secondAttribute="width" id="El6-qZ-YHQ"/>
+                            <constraint firstItem="2L5-K1-lqo" firstAttribute="width" secondItem="fXq-NB-iOY" secondAttribute="width" id="Isr-jj-djN"/>
+                            <constraint firstItem="fXq-NB-iOY" firstAttribute="leading" secondItem="fNy-wB-vwL" secondAttribute="trailing" id="MwP-Ce-h8P"/>
+                            <constraint firstItem="2L5-K1-lqo" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="fZ0-Rp-L87"/>
+                            <constraint firstItem="fNy-wB-vwL" firstAttribute="width" secondItem="0pU-6A-yKI" secondAttribute="width" id="lr9-Jf-ZUb"/>
+                            <constraint firstItem="0pU-6A-yKI" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="m7y-9p-3Uh"/>
+                            <constraint firstItem="PXY-HD-bwD" firstAttribute="leading" secondItem="fXq-NB-iOY" secondAttribute="trailing" id="qNw-3r-qGQ"/>
+                            <constraint firstItem="2L5-K1-lqo" firstAttribute="leading" secondItem="0pU-6A-yKI" secondAttribute="trailing" id="taK-tZ-XVO"/>
+                            <constraint firstItem="PXY-HD-bwD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="u5k-aO-J8u"/>
+                            <constraint firstItem="PXY-HD-bwD" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="wBA-N4-QOD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="buttonTemplate" width="11" height="9"/>
+    </resources>
+</document>

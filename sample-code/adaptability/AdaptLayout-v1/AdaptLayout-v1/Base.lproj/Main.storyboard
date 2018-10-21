@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xzb-Lv-Rzq">
+    <device id="retina4_0" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Control Panel-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaptLayout_v1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="751" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="3VK-HT-pM3" userLabel="ImageView">
+                                <rect key="frame" x="20" y="52" width="150" height="150"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3n4-dp-OeE" userLabel="Button">
+                                <rect key="frame" x="178" y="109" width="97" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Solar Panel"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3VK-HT-pM3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" id="BTW-vT-Zn3"/>
+                            <constraint firstItem="3VK-HT-pM3" firstAttribute="centerY" secondItem="3n4-dp-OeE" secondAttribute="centerY" id="DFv-jd-XEu"/>
+                            <constraint firstAttribute="topMargin" secondItem="3VK-HT-pM3" secondAttribute="top" id="KIS-iC-tol"/>
+                            <constraint firstItem="3VK-HT-pM3" firstAttribute="top" secondItem="3n4-dp-OeE" secondAttribute="bottom" constant="8" symbolic="YES" id="LwZ-eK-jN8"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="3n4-dp-OeE" secondAttribute="trailing" id="MCF-el-iom"/>
+                            <constraint firstItem="3n4-dp-OeE" firstAttribute="leading" secondItem="3VK-HT-pM3" secondAttribute="trailing" constant="8" symbolic="YES" id="QQc-t9-210"/>
+                            <constraint firstItem="3n4-dp-OeE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" id="g2F-3f-M7P"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="3VK-HT-pM3" secondAttribute="leading" id="oms-Nf-ggc"/>
+                            <constraint firstAttribute="topMargin" secondItem="3n4-dp-OeE" secondAttribute="top" id="uke-R5-Q1c"/>
+                        </constraints>
+                        <directionalEdgeInsets key="directionalLayoutMargins" top="20" leading="20" bottom="20" trailing="20"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DFv-jd-XEu"/>
+                                <exclude reference="KIS-iC-tol"/>
+                                <exclude reference="oms-Nf-ggc"/>
+                                <exclude reference="MCF-el-iom"/>
+                                <exclude reference="QQc-t9-210"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="BTW-vT-Zn3"/>
+                                <include reference="DFv-jd-XEu"/>
+                                <include reference="KIS-iC-tol"/>
+                                <exclude reference="LwZ-eK-jN8"/>
+                                <include reference="oms-Nf-ggc"/>
+                                <include reference="MCF-el-iom"/>
+                                <include reference="QQc-t9-210"/>
+                                <exclude reference="g2F-3f-M7P"/>
+                                <exclude reference="uke-R5-Q1c"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Control Panel" id="8eY-Bc-epS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1088.8" y="-565.27093596059115"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JNl-kr-3jO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xzb-Lv-Rzq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5TP-OG-ZBP">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="n5D-vb-uUh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IBc-fI-mQg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="-564.46776611694156"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Sun" width="150" height="150"/>
+    </resources>
+</document>
