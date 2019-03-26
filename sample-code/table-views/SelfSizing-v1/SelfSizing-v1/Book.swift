@@ -28,16 +28,16 @@
 
 import Foundation
 
-public struct Book: Codable {
+struct Book: Codable {
     let title: String
     let author: String
     let text: [String]
 }
 
-public extension Book {
+extension Book {
     /// Import a `Book` from a `plist` file
     /// - Parameter url: URL of a plist file
-    public init?(contentsOf url: URL) {
+    init?(contentsOf url: URL) {
         do {
             let data = try Data(contentsOf: url)
             let decoder = PropertyListDecoder()
