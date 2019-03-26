@@ -99,6 +99,7 @@
 				TargetAttributes = {
 					533F9083210F6675000B0353 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -305,7 +306,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.useyourloaf.AdaptText-v1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -323,7 +324,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.useyourloaf.AdaptText-v1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
