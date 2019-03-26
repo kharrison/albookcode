@@ -46,7 +46,7 @@ public extension UIImageView {
      - Returns: The newly created UIImageView.
      */
     
-    public convenience init(named name: String, top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat) {
+    convenience init(named name: String, top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat) {
         let insets = UIEdgeInsets.init(top: top, left: left, bottom: bottom, right: right)
         let originalImage = UIImage(named: name)
         let insetImage = originalImage?.withAlignmentRectInsets(insets)

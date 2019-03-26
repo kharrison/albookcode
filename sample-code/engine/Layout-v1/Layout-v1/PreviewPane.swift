@@ -28,15 +28,14 @@
 
 import UIKit
 
-public final class PreviewPane: UIView {
-
-    public var spacing: CGFloat = 16.0 {
+final class PreviewPane: UIView {
+    var spacing: CGFloat = 16.0 {
         didSet {
             stackView.spacing = spacing
         }
     }
 
-    public func show(_ items: [UIView]) {
+    func show(_ items: [UIView]) {
         stackView.arrangedSubviews.forEach { $0.removeFromSuperview() }
         items.forEach { stackView.addArrangedSubview($0) }
         overflow.removeAll()
@@ -52,17 +51,17 @@ public final class PreviewPane: UIView {
         return stackView
     }()
 
-    public override init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
     }
 
-    public required init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupView()
     }
 
-    public override func layoutSubviews() {
+    override func layoutSubviews() {
         super.layoutSubviews()
 
         while let nextItem = overflow.first,
