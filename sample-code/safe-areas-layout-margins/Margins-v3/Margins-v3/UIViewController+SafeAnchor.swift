@@ -31,7 +31,7 @@ import UIKit
 @available(iOS 7.0, tvOS 9.0, *)
 public extension UIViewController {
 
-    public var safeTopAnchor: NSLayoutYAxisAnchor {
+    var safeTopAnchor: NSLayoutYAxisAnchor {
         if #available(iOS 11, *) {
             return view.safeAreaLayoutGuide.topAnchor
         } else {
@@ -39,7 +39,7 @@ public extension UIViewController {
         }
     }
 
-    public var safeBottomAnchor: NSLayoutYAxisAnchor {
+    var safeBottomAnchor: NSLayoutYAxisAnchor {
         if #available(iOS 11, *) {
             return view.safeAreaLayoutGuide.bottomAnchor
         } else {
@@ -47,7 +47,7 @@ public extension UIViewController {
         }
     }
 
-    public var safeLeadingAnchor: NSLayoutXAxisAnchor {
+    var safeLeadingAnchor: NSLayoutXAxisAnchor {
         if #available(iOS 11, *) {
             return view.safeAreaLayoutGuide.leadingAnchor
         } else {
@@ -55,7 +55,7 @@ public extension UIViewController {
         }
     }
 
-    public var safeTrailingAnchor: NSLayoutXAxisAnchor {
+    var safeTrailingAnchor: NSLayoutXAxisAnchor {
         if #available(iOS 11, *) {
             return view.safeAreaLayoutGuide.trailingAnchor
         } else {

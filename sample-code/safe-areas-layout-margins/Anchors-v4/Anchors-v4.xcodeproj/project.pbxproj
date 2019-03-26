@@ -96,7 +96,7 @@
 				TargetAttributes = {
 					5372798E205575D1002388BF = {
 						CreatedOnToolsVersion = 9.3;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -282,7 +282,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.useyourloaf.Anchors-v4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -300,7 +300,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.useyourloaf.Anchors-v4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
