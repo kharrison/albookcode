@@ -38,6 +38,7 @@ final class ViewController: UIViewController {
         let stackView = UIStackView(arrangedSubviews: [heart, star, diamond])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.spacing = UIStackView.spacingUseSystem
+        stackView.axis = .vertical
         return stackView
     }()
 
@@ -50,6 +51,15 @@ final class ViewController: UIViewController {
         super.traitCollectionDidChange(previousTraitCollection)
         if previousTraitCollection?.verticalSizeClass != traitCollection.verticalSizeClass {
             configureView(for: traitCollection)
+        }
+    }
+
+    var firstTime = true
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        if firstTime {
+            configureView(for: traitCollection)
+            firstTime = false
         }
     }
 
@@ -69,6 +79,15 @@ final class ViewController: UIViewController {
             stackView.axis = .horizontal
         default:
             stackView.axis = .vertical
+        }
+    }
+
+    private func printSizeClass(_ sizeClass: UIUserInterfaceSizeClass, for label: String) {
+        switch sizeClass {
+        case .unspecified: print("\(label): unspecified")
+        case .compact: print("\(label): compact")
+        case .regular: print("\(label): regular")
+        @unknown default: print("(label): unknown")
         }
     }
 }
