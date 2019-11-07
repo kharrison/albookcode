@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Challenge9_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xiv-yW-sSk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WH-et-ceN">
+                                <rect key="frame" x="191.5" y="309" width="167.5" height="49"/>
+                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="Fast">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fast:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cPr-v0-2si"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3Y-T1-VIS">
+                                <rect key="frame" x="16" y="235.5" width="167.5" height="196"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="Slow">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="slow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fd7-Xq-Uqt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2WH-et-ceN" firstAttribute="centerY" secondItem="nnw-TA-zQC" secondAttribute="centerY" id="ILB-AS-mWQ"/>
+                            <constraint firstItem="V3Y-T1-VIS" firstAttribute="centerY" secondItem="nnw-TA-zQC" secondAttribute="centerY" id="SUu-z0-HSr"/>
+                            <constraint firstItem="V3Y-T1-VIS" firstAttribute="height" secondItem="2WH-et-ceN" secondAttribute="height" multiplier="4" identifier="SlowHeightConstraint" id="SxK-ya-CZf" userLabel="Slow.height = 4 x Fast.height"/>
+                            <constraint firstItem="2WH-et-ceN" firstAttribute="leading" secondItem="V3Y-T1-VIS" secondAttribute="trailing" constant="8" symbolic="YES" id="ZCH-z6-w0z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2WH-et-ceN" secondAttribute="trailing" id="b5u-Mm-YdE"/>
+                            <constraint firstItem="V3Y-T1-VIS" firstAttribute="leading" secondItem="xiv-yW-sSk" secondAttribute="leadingMargin" id="eDH-GU-mpR"/>
+                            <constraint firstItem="2WH-et-ceN" firstAttribute="height" secondItem="V3Y-T1-VIS" secondAttribute="height" multiplier="4" identifier="FastHeightConstraint" id="iWy-kM-kBr"/>
+                            <constraint firstItem="2WH-et-ceN" firstAttribute="width" secondItem="V3Y-T1-VIS" secondAttribute="width" id="pN6-K4-SMs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nnw-TA-zQC"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="iWy-kM-kBr"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="fastHeightConstraint" destination="iWy-kM-kBr" id="Uad-Ca-USS"/>
+                        <outlet property="slowHeightConstraint" destination="SxK-ya-CZf" id="CoW-P1-1BY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="110"/>
+        </scene>
+    </scenes>
+</document>
