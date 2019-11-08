@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gci-bM-Z9a">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Activity-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ActivityViewController" customModule="ScrollGuide_v1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zyA-Rk-Wsy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UjA-Pj-1iI" userLabel="ContainerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="458"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Ready!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8N2-aq-CRr">
+                                                <rect key="frame" x="8" y="8" width="359" height="67"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Skater" translatesAutoresizingMaskIntoConstraints="NO" id="jyQ-Wm-POm">
+                                                <rect key="frame" x="8" y="83" width="359" height="300"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IdI-hj-86k">
+                                                <rect key="frame" x="8" y="391" width="359" height="59"/>
+                                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                                <state key="normal" title="Start">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="8N2-aq-CRr" firstAttribute="leading" secondItem="UjA-Pj-1iI" secondAttribute="leadingMargin" id="301-OO-ZN1"/>
+                                            <constraint firstItem="jyQ-Wm-POm" firstAttribute="top" secondItem="8N2-aq-CRr" secondAttribute="bottom" constant="8" symbolic="YES" id="5aX-be-iLB"/>
+                                            <constraint firstItem="IdI-hj-86k" firstAttribute="top" secondItem="jyQ-Wm-POm" secondAttribute="bottom" constant="8" symbolic="YES" id="F4L-87-g6z"/>
+                                            <constraint firstAttribute="topMargin" secondItem="8N2-aq-CRr" secondAttribute="top" id="YLg-xR-74h"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="IdI-hj-86k" secondAttribute="trailing" id="aqk-a2-2i0"/>
+                                            <constraint firstItem="IdI-hj-86k" firstAttribute="leading" secondItem="UjA-Pj-1iI" secondAttribute="leadingMargin" id="bU5-VE-RGV"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="IdI-hj-86k" secondAttribute="bottom" id="cfi-jm-goJ"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="jyQ-Wm-POm" secondAttribute="trailing" id="gfZ-1j-Tux"/>
+                                            <constraint firstItem="jyQ-Wm-POm" firstAttribute="leading" secondItem="UjA-Pj-1iI" secondAttribute="leadingMargin" id="icH-mj-1rs"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="8N2-aq-CRr" secondAttribute="trailing" id="zFe-z6-VlN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="UjA-Pj-1iI" firstAttribute="width" secondItem="G6X-9p-zSP" secondAttribute="width" id="1ew-T1-qgk"/>
+                                    <constraint firstItem="UjA-Pj-1iI" firstAttribute="trailing" secondItem="tJ6-I7-PhJ" secondAttribute="trailing" id="KDP-iZ-xBH"/>
+                                    <constraint firstItem="UjA-Pj-1iI" firstAttribute="top" secondItem="tJ6-I7-PhJ" secondAttribute="top" id="LG9-bj-5Ii"/>
+                                    <constraint firstItem="UjA-Pj-1iI" firstAttribute="bottom" secondItem="tJ6-I7-PhJ" secondAttribute="bottom" id="r2J-8M-SgB"/>
+                                    <constraint firstItem="UjA-Pj-1iI" firstAttribute="leading" secondItem="tJ6-I7-PhJ" secondAttribute="leading" id="zsc-Js-uZT"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="tJ6-I7-PhJ"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="G6X-9p-zSP"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zyA-Rk-Wsy" secondAttribute="bottom" id="KAP-S7-PGU"/>
+                            <constraint firstItem="zyA-Rk-Wsy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Kbx-GE-sof"/>
+                            <constraint firstAttribute="trailing" secondItem="zyA-Rk-Wsy" secondAttribute="trailing" id="fYl-Zl-vXb"/>
+                            <constraint firstItem="zyA-Rk-Wsy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wrx-zY-f8z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Activity" id="9dr-9n-FZ9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.2" y="138.0809595202399"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GvE-ni-1OK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gci-bM-Z9a" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hi2-h6-POD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="szg-Lp-XFs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DaH-bb-hgO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Skater" width="300" height="300"/>
+    </resources>
+</document>
