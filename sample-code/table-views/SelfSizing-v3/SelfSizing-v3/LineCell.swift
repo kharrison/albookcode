@@ -72,6 +72,6 @@ final class LineCell: UITableViewCell, ReusableIdentifier {
             margins.trailingAnchor.constraint(equalTo: stackView.trailingAnchor),
             margins.topAnchor.constraint(equalTo: stackView.topAnchor),
             margins.bottomAnchor.constraint(equalTo: stackView.bottomAnchor)
-            ])
+        ])
     }
 }

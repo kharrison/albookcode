@@ -29,7 +29,6 @@
 import UIKit
 
 final class BookTableViewController: UITableViewController {
-
     var bookUrl: URL? {
         didSet {
             if let url = bookUrl {
@@ -46,6 +45,5 @@ final class BookTableViewController: UITableViewController {
         super.viewDidLoad()
         let nib = UINib(nibName: "LineCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: LineCell.reuseIdentifier)
-        tableView.rowHeight = UITableView.automaticDimension
     }
 }
