@@ -29,7 +29,6 @@
 import UIKit
 
 final class BookTableViewController: UITableViewController {
-
     var bookUrl: URL? {
         didSet {
             if let url = bookUrl {
@@ -45,7 +44,6 @@ final class BookTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(LineCell.self, forCellReuseIdentifier: LineCell.reuseIdentifier)
-        tableView.rowHeight = UITableView.automaticDimension
 
         // default is false for iOS 12, but true for iOS 9,10,11
         // tableView.cellLayoutMarginsFollowReadableWidth = true

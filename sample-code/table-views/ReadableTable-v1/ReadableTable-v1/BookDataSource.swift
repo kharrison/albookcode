@@ -29,7 +29,6 @@
 import UIKit
 
 final class BookDataSource: NSObject {
-
     private let tableView: UITableView
     private let book: Book?
     private let bookURL: URL
@@ -53,7 +52,6 @@ final class BookDataSource: NSObject {
 }
 
 extension BookDataSource: UITableViewDataSource {
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return book?.text.count ?? 0
     }

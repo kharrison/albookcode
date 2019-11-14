@@ -29,7 +29,6 @@
 import UIKit
 
 final class BookTableViewController: UITableViewController {
-
     var bookUrl: URL? {
         didSet {
             if let url = bookUrl {
@@ -40,10 +39,5 @@ final class BookTableViewController: UITableViewController {
 
     private var dataSource: BookDataSource? {
         didSet { title = dataSource?.title }
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.rowHeight = UITableView.automaticDimension
     }
 }
