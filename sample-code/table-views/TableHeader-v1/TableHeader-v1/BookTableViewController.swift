@@ -44,11 +44,6 @@ final class BookTableViewController: UITableViewController {
         }
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.rowHeight = UITableView.automaticDimension
-    }
-
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         guard let headerView = tableView.tableHeaderView else {
