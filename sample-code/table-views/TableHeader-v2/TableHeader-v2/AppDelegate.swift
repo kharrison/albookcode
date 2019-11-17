@@ -32,7 +32,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         if let navigationController = window?.rootViewController as? UINavigationController,
             let bookTableViewController = navigationController.topViewController as? BookTableViewController {
             let url = Bundle.main.url(forResource: "Huckleberry", withExtension: "plist")

@@ -1,4 +1,4 @@
-//  Copyright © 2018 Keith Harrison. All rights reserved.
+//  Copyright © 2018-2019 Keith Harrison. All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -50,7 +50,6 @@ final class BookTableViewController: UITableViewController {
         tableView.register(nib, forCellReuseIdentifier: LineCell.reuseIdentifier)
         let headerView = Bundle.main.loadNibNamed("BookHeaderView", owner: self)?.first as? BookHeaderView
         tableView.tableHeaderView = headerView
-        tableView.rowHeight = UITableView.automaticDimension
     }
 
     override func viewDidLayoutSubviews() {
@@ -59,9 +58,10 @@ final class BookTableViewController: UITableViewController {
             return
         }
 
-        let size = headerView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
-        if headerView.frame.size.height != size.height {
-            headerView.frame.size.height = size.height
+        let targetSize = CGSize(width: tableView.bounds.width, height: UIView.layoutFittingCompressedSize.height)
+        let fittingSize = headerView.systemLayoutSizeFitting(targetSize, withHorizontalFittingPriority: .required, verticalFittingPriority: .fittingSizeLevel)
+        if !headerView.bounds.size.equalTo(fittingSize) {
+            headerView.frame.size = fittingSize
             tableView.tableHeaderView = headerView
 
             // Uncomment for iOS 9.
