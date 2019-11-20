@@ -29,13 +29,13 @@
 import UIKit
 
 final class SettingsViewController: UIViewController {
-    
     @IBOutlet private var stackView: UIStackView!
     @IBOutlet private var largerSwitch: UISwitch!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        configureView(for: traitCollection)
     }
 
     @IBAction func largerType(_ sender: UISwitch) {
@@ -56,7 +56,7 @@ final class SettingsViewController: UIViewController {
             backgroundView.topAnchor.constraint(equalTo: stackView.topAnchor),
             backgroundView.trailingAnchor.constraint(equalTo: stackView.trailingAnchor),
             backgroundView.bottomAnchor.constraint(equalTo: stackView.bottomAnchor)
-            ])
+        ])
     }
 }
 
