@@ -29,7 +29,6 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
     private let heart = UIImageView(image: UIImage(named: "Heart"))
     private let star = UIImageView(image: UIImage(named: "Star"))
     private let diamond = UIImageView(image: UIImage(named: "Diamond"))
@@ -45,21 +44,13 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        configureView(for: traitCollection)
     }
 
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
         if previousTraitCollection?.verticalSizeClass != traitCollection.verticalSizeClass {
             configureView(for: traitCollection)
-        }
-    }
-
-    var firstTime = true
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        if firstTime {
-            configureView(for: traitCollection)
-            firstTime = false
         }
     }
 
@@ -70,24 +61,14 @@ final class ViewController: UIViewController {
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: margins.topAnchor),
             stackView.centerXAnchor.constraint(equalTo: margins.centerXAnchor)
-            ])
+        ])
     }
 
     private func configureView(for traitCollection: UITraitCollection) {
-        switch traitCollection.verticalSizeClass {
-        case .compact:
+        if traitCollection.verticalSizeClass == .compact {
             stackView.axis = .horizontal
-        default:
+        } else {
             stackView.axis = .vertical
-        }
-    }
-
-    private func printSizeClass(_ sizeClass: UIUserInterfaceSizeClass, for label: String) {
-        switch sizeClass {
-        case .unspecified: print("\(label): unspecified")
-        case .compact: print("\(label): compact")
-        case .regular: print("\(label): regular")
-        @unknown default: print("(label): unknown")
         }
     }
 }
