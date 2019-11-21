@@ -29,7 +29,6 @@
 import UIKit
 
 final class TodayViewController: UIViewController {
-
     private enum ViewMetrics {
         static let margin: CGFloat = 20.0
         static let backgroundColor = UIColor(named: "SkyBlue")
@@ -83,6 +82,6 @@ final class TodayViewController: UIViewController {
             scrollView.bottomAnchor.constraint(equalTo: forecastView.bottomAnchor),
 
             scrollView.widthAnchor.constraint(equalTo: forecastView.widthAnchor)
-            ])
+        ])
     }
 }

@@ -29,7 +29,6 @@
 import UIKit
 
 public struct Forecast {
-
     public enum Condition {
         case sun
         // other conditions...

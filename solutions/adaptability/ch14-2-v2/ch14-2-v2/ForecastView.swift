@@ -29,7 +29,6 @@
 import UIKit
 
 final class ForecastView: UIView {
-
     let titleLabel: UILabel = {
         let label = UILabel.makeLabel(forTextStyle: .title1)
         label.textAlignment = .center
@@ -45,7 +44,7 @@ final class ForecastView: UIView {
     }()
 
     let summaryLabel: UILabel = {
-        return UILabel.makeLabel(forTextStyle: .body)
+        UILabel.makeLabel(forTextStyle: .body)
     }()
 
     private lazy var commonConstraints: [NSLayoutConstraint] = {
@@ -106,6 +105,7 @@ final class ForecastView: UIView {
         addSubview(summaryLabel)
         addSubview(imageView)
         NSLayoutConstraint.activate(commonConstraints)
+        configureView(traitCollection)
     }
 }
 
@@ -113,13 +113,18 @@ extension ForecastView {
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
         if previousTraitCollection?.verticalSizeClass != traitCollection.verticalSizeClass {
-            if traitCollection.verticalSizeClass == .compact {
-                NSLayoutConstraint.deactivate(regularConstraints)
-                NSLayoutConstraint.activate(compactConstraints)
-            } else {
-                NSLayoutConstraint.deactivate(compactConstraints)
-                NSLayoutConstraint.activate(regularConstraints)
-            }
+            configureView(traitCollection)
         }
+    }
+
+    private func configureView(_ traitCollection: UITraitCollection) {
+        if traitCollection.verticalSizeClass == .compact {
+            NSLayoutConstraint.deactivate(regularConstraints)
+            NSLayoutConstraint.activate(compactConstraints)
+        } else {
+            NSLayoutConstraint.deactivate(compactConstraints)
+            NSLayoutConstraint.activate(regularConstraints)
+        }
+
     }
 }

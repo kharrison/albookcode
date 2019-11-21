@@ -29,7 +29,6 @@
 import UIKit
 
 final class AdaptiveScrollView: UIScrollView {
-
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -48,7 +47,7 @@ final class AdaptiveScrollView: UIScrollView {
     @objc private func keyboardDidShow(_ notification: Notification) {
         guard let userInfo = notification.userInfo,
             let keyboardFrame = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else {
-                return
+            return
         }
 
         let keyboardSize = keyboardFrame.cgRectValue.size
