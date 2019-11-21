@@ -29,7 +29,6 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
     @IBOutlet private var stackView: UIStackView!
 
     private var initialSetupDone = false
@@ -52,7 +51,6 @@ final class ViewController: UIViewController {
 }
 
 extension ViewController {
-
     private enum AnimationMetrics {
         static let duration: TimeInterval = 0.3
         static let transformScale: CGFloat = 1.25
@@ -69,9 +67,9 @@ extension ViewController {
     }
 
     private func animateStack(with coordinator: UIViewControllerTransitionCoordinator) {
-        coordinator.animate(alongsideTransition: { context in
+        coordinator.animate(alongsideTransition: { _ in
             self.stackView.transform = CGAffineTransform(scaleX: AnimationMetrics.transformScale, y: AnimationMetrics.transformScale)
-        }, completion: { context in
+        }, completion: { _ in
             UIViewPropertyAnimator.runningPropertyAnimator(withDuration: AnimationMetrics.duration, delay: 0, options: [], animations: {
                 self.stackView.transform = .identity
             })
