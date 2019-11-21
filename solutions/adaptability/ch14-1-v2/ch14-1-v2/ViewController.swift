@@ -29,7 +29,6 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
     private enum ViewMetrics {
         static let spacing: CGFloat = 32.0
         static let fontSize: CGFloat = 40.0
@@ -59,6 +58,7 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        configureView(for: traitCollection)
     }
 
     private func setupView() {
@@ -69,12 +69,11 @@ final class ViewController: UIViewController {
             margin.leadingAnchor.constraint(equalTo: stackView.leadingAnchor),
             margin.trailingAnchor.constraint(equalTo: stackView.trailingAnchor),
             margin.centerYAnchor.constraint(equalTo: stackView.centerYAnchor),
-            ])
+        ])
     }
 }
 
 extension ViewController {
-
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
         if previousTraitCollection?.horizontalSizeClass != traitCollection.horizontalSizeClass {
@@ -94,7 +93,6 @@ extension ViewController {
 }
 
 extension ViewController {
-
     @objc private func previewAction(_ sender: UIButton) {
         print("preview")
     }
