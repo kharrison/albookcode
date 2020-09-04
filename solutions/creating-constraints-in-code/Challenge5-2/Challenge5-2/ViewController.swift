@@ -29,7 +29,6 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
     private let padding: CGFloat = 50.0
     private let tileProportion: CGFloat = 0.25
 

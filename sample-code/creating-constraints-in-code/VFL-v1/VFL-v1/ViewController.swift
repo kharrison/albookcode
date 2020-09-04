@@ -29,7 +29,6 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
     private let redView = UIView.makeView(color: .red)
     private let greenView = UIView.makeView(color: .green)
 

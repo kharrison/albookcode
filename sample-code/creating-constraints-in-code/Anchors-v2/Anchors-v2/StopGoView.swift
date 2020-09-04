@@ -29,7 +29,6 @@
 import UIKit
 
 final class StopGoView: UIView {
-    
     private let padding: CGFloat = 50.0
     private let spacing: CGFloat = 25.0
 

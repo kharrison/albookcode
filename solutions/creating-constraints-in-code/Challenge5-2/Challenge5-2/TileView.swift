@@ -29,7 +29,6 @@
 import UIKit
 
 final class TileView: UIView {
-
     private let padding: CGFloat = 25.0
 
     private let blueView = UIView.makeView(color: .blue)

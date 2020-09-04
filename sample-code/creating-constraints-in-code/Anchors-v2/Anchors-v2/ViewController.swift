@@ -29,7 +29,6 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
     private let stopGoView: StopGoView = {
         let view = StopGoView()
         view.translatesAutoresizingMaskIntoConstraints = false
