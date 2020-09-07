@@ -29,7 +29,6 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
     private let externalPadding: CGFloat = 50.0
     private let internalSpacing: CGFloat = 25.0
 
