@@ -29,7 +29,6 @@
 import UIKit
 
 final class NestedView: UIView {
-
     var nestedColor: UIColor = .green {
         didSet {
             nestedView.backgroundColor = nestedColor

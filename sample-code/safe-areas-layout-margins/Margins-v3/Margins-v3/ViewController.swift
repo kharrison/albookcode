@@ -29,7 +29,6 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
     private let margin: CGFloat = 50.0
 
     private let nestedView: NestedView = {

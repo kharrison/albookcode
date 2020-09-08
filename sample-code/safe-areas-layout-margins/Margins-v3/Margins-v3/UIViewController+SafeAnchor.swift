@@ -30,7 +30,6 @@ import UIKit
 
 @available(iOS 7.0, tvOS 9.0, *)
 public extension UIViewController {
-
     var safeTopAnchor: NSLayoutYAxisAnchor {
         if #available(iOS 11, *) {
             return view.safeAreaLayoutGuide.topAnchor
