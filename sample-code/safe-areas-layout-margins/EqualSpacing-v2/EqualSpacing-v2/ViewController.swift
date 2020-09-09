@@ -29,7 +29,6 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
     private lazy var cancelButton: UIButton = {
         let title = NSLocalizedString("Cancel", comment: "Cancel button")
         let button = UIButton.customButton(title: title, titleColor: .white, tintColor: .red, background: UIImage(named: "buttonTemplate"))
