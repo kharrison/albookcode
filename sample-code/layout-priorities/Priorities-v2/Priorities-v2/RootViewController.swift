@@ -29,7 +29,6 @@
 import UIKit
 
 final class RootViewController: UIViewController {
-
     private let sunView = UIImageView(named: "Sun", backgroundColor: .orange)
     private let snowView = UIImageView(named: "Snow", backgroundColor: .blue)
 
