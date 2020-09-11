@@ -29,7 +29,6 @@
 import UIKit
 
 final class RootViewController: UIViewController {
-
     private let fontSize: CGFloat = 24.0
     private let minimumWidth: CGFloat = 160.0
 

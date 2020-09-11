@@ -29,7 +29,6 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
     private let backgroundView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false

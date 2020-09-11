@@ -29,7 +29,6 @@
 import UIKit
 
 final class RootViewController: UIViewController {
-
     private let sunImage: UIImageView = {
         let view = UIImageView(image: UIImage(named: "Sun"))
         view.translatesAutoresizingMaskIntoConstraints = false
