@@ -29,7 +29,6 @@
 import UIKit
 
 final class RootViewController: UIViewController {
-
     private enum ViewMetrics {
         static let fontSize: CGFloat = 24.0
         static let spacing: CGFloat = 16.0

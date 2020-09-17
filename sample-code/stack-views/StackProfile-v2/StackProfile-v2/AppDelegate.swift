@@ -30,7 +30,6 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -40,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let profile = Profile(name: "Sue Appleseed", bio: "Deep sea diver. Donut maker. Tea drinker.", avatar: nil)
         let profileViewController = ProfileViewController()
         profileViewController.profile = profile
-        
+
         let navigationController = UINavigationController(rootViewController: profileViewController)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()

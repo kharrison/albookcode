@@ -29,7 +29,6 @@
 import UIKit
 
 final class ProfileViewController: UIViewController {
-
     private enum ViewMetrics {
         static let margin: CGFloat = 20.0
         static let nameFontSize: CGFloat = 18.0
@@ -94,7 +93,7 @@ final class ProfileViewController: UIViewController {
             profileStackView.leadingAnchor.constraint(equalTo: margin.leadingAnchor),
             profileStackView.topAnchor.constraint(equalTo: margin.topAnchor),
             profileStackView.trailingAnchor.constraint(equalTo: margin.trailingAnchor)
-            ])
+        ])
     }
 
     private func configureView() {
