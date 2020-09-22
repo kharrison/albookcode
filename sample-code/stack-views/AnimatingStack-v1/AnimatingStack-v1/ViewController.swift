@@ -29,7 +29,6 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
     @IBOutlet private var imageStackView: UIStackView!
     @IBOutlet private var axisSwitch: UISwitch!
 
