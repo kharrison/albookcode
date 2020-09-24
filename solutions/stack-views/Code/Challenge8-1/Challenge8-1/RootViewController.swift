@@ -29,7 +29,6 @@
 import UIKit
 
 final class RootViewController: UIViewController {
-
     private enum ViewMetrics {
         static let labelFontSize: CGFloat = 24.0
         static let buttonFontSize: CGFloat = 18.0
@@ -82,7 +81,7 @@ final class RootViewController: UIViewController {
             stackView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor),
             stackView.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
             stackView.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor)
-            ])
+        ])
     }
 }
 
