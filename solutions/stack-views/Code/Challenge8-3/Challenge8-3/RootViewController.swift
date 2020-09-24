@@ -29,7 +29,6 @@
 import UIKit
 
 final class RootViewController: UIViewController {
-
     private enum ViewMetrics {
         static let codeFontSize: CGFloat = 40
         static let codeSpacing: CGFloat = 16
@@ -89,7 +88,7 @@ final class RootViewController: UIViewController {
             rootStackView.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
             rootStackView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor),
             rootStackView.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor)
-            ])
+        ])
     }
 
     @objc private func showCode(_ sender: UISwitch) {

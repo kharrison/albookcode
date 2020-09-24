@@ -29,7 +29,6 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
     @IBOutlet private var rootStackView: UIStackView!
     @IBOutlet private var codeStackView: UIStackView!
     @IBOutlet private var codeSwitch: UISwitch!
@@ -39,7 +38,7 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-     }
+    }
 
     private func setupView() {
         rootStackView.addBackground(color: .purple)

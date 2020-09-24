@@ -1,9 +1,4 @@
-//
-//  UIStackView+Extension.swift
-//  AutoLayout
-//
-//  Created by Keith Harrison https://useyourloaf.com
-//  Copyright (c) 2017 Keith Harrison. All rights reserved.
+//  Copyright (c) 2017-2020 Keith Harrison. All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -34,7 +29,6 @@
 import UIKit
 
 public extension UIStackView {
-
     @discardableResult
     func addBackground(color: UIColor, radius: CGFloat = 0) -> UIView {
         return addUnarrangedView(color: color, radius: radius, at: 0)
@@ -58,7 +52,7 @@ public extension UIStackView {
             view.trailingAnchor.constraint(equalTo: trailingAnchor),
             view.topAnchor.constraint(equalTo: topAnchor),
             view.bottomAnchor.constraint(equalTo: bottomAnchor)
-            ])
+        ])
         return view
     }
 }
