@@ -29,7 +29,6 @@
 import UIKit
 
 final class ViewController: UIViewController {
-    
     @IBOutlet private var containerStackView: UIStackView!
     @IBOutlet private var imageStackView: UIStackView!
     @IBOutlet private var axisSwitch: UISwitch!
@@ -64,9 +63,9 @@ final class ViewController: UIViewController {
             containerStackView.trailingAnchor.constraint(equalTo: backgroundView.trailingAnchor),
             containerStackView.topAnchor.constraint(equalTo: backgroundView.topAnchor),
             containerStackView.bottomAnchor.constraint(equalTo: backgroundView.bottomAnchor)
-            ])
+        ])
     }
-    
+
     private func configureAxis() {
         imageStackView?.axis = axisSwitch.isOn ? .vertical : .horizontal
         if let lastImageView = imageStackView.arrangedSubviews.last {
