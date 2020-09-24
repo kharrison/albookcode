@@ -29,7 +29,6 @@
 import UIKit
 
 final class RootViewController: UIViewController {
-
     private enum ViewMetrics {
         static let fontSize: CGFloat = 24.0
         static let spacing: CGFloat = 8.0
@@ -47,6 +46,7 @@ final class RootViewController: UIViewController {
         button.setTitle(NSLocalizedString("Share", comment: "Share"), for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: ViewMetrics.fontSize)
         button.addTarget(self, action: #selector(shareAction(_:)), for: .touchUpInside)
+        button.setContentHuggingPriority(.defaultLow + 1, for: .vertical)
         return button
     }()
 
@@ -71,7 +71,7 @@ final class RootViewController: UIViewController {
             stackView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor),
             stackView.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor),
             stackView.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor)
-            ])
+        ])
     }
 
     @objc private func shareAction(_ sender: UIButton) {
