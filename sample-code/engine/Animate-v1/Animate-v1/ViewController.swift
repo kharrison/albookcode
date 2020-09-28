@@ -29,7 +29,6 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
     @IBOutlet private var centerConstraint: NSLayoutConstraint!
 
     private enum AnimationMetrics {
