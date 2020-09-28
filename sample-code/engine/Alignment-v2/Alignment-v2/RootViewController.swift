@@ -29,7 +29,6 @@
 import UIKit
 
 final class RootViewController: UIViewController {
-
     private let crazyShadowView: UIImageView = {
         let imageView = UIImageView(named: "CrazyShadow", top: 0, left: 0, bottom: 30.0, right: 30.0)
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -61,6 +60,6 @@ final class RootViewController: UIViewController {
             gridView.topAnchor.constraint(equalTo: view.topAnchor),
             gridView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             gridView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-            ])
+        ])
     }
 }

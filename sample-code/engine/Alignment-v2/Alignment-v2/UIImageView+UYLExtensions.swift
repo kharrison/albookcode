@@ -30,24 +30,23 @@
 import UIKit
 
 public extension UIImageView {
-
     /**
      A convenience initializer to create a UIImageView with an image that has the specified edge insets. The UIImage is created from the named file with the specified edge insets.
-     
+
      - Note: The image view is created with the `translatedAutoresizingMaskIntoConstraints` flag set to false ready for use with a constraints based layout.
-     
+
      - Parameter named: A String which should match the name of a valid image file in the application bundle or asset
      catalog.
      - Parameter top: The inset at the top of an object.
      - Parameter left: The inset on the left of an object.
      - Parameter bottom: The inset on the bottom of an object.
      - Parameter right: The inset on the right of an object.
-     
+
      - Returns: The newly created UIImageView.
      */
-    
+
     convenience init(named name: String, top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat) {
-        let insets = UIEdgeInsets.init(top: top, left: left, bottom: bottom, right: right)
+        let insets = UIEdgeInsets(top: top, left: left, bottom: bottom, right: right)
         let originalImage = UIImage(named: name)
         let insetImage = originalImage?.withAlignmentRectInsets(insets)
         self.init(image: insetImage)

@@ -65,19 +65,21 @@ final class PreviewPane: UIView {
         super.layoutSubviews()
 
         while let nextItem = overflow.first,
-            stackView.bounds.width + spacing + nextItem.intrinsicContentSize.width <= bounds.width {
-                stackView.addArrangedSubview(nextItem)
-                overflow.remove(at: 0)
-                updateConstraintsIfNeeded()
-                super.layoutSubviews()
+            stackView.bounds.width + spacing + nextItem.intrinsicContentSize.width <= bounds.width
+        {
+            stackView.addArrangedSubview(nextItem)
+            overflow.remove(at: 0)
+            updateConstraintsIfNeeded()
+            super.layoutSubviews()
         }
 
         while stackView.bounds.width > bounds.width,
-            let extraView = stackView.arrangedSubviews.last {
-                extraView.removeFromSuperview()
-                overflow.insert(extraView, at: 0)
-                updateConstraintsIfNeeded()
-                super.layoutSubviews()
+            let extraView = stackView.arrangedSubviews.last
+        {
+            extraView.removeFromSuperview()
+            overflow.insert(extraView, at: 0)
+            updateConstraintsIfNeeded()
+            super.layoutSubviews()
         }
     }
 
@@ -88,6 +90,6 @@ final class PreviewPane: UIView {
             stackView.centerXAnchor.constraint(equalTo: centerXAnchor),
             stackView.topAnchor.constraint(equalTo: topAnchor),
             stackView.bottomAnchor.constraint(equalTo: bottomAnchor)
-            ])
+        ])
     }
 }

@@ -1,5 +1,4 @@
-//  Created by Keith Harrison https://useyourloaf.com
-//  Copyright (c) 2018 Keith Harrison. All rights reserved.
+//  Copyright (c) 2018-2020 Keith Harrison. All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -35,7 +34,6 @@ import UIKit
 
 @IBDesignable
 public final class GridView: UIView {
-
     /// The number of horizontal rows - default is 1.
     @IBInspectable public var rowCount: Int = 1 { didSet { setNeedsDisplay() } }
 

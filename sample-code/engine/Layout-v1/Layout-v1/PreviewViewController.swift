@@ -29,7 +29,6 @@
 import UIKit
 
 final class PreviewViewController: UIViewController {
-
     private let itemCount = 10
 
     private lazy var previewPane: PreviewPane = {
@@ -66,7 +65,7 @@ final class PreviewViewController: UIViewController {
             previewPane.leadingAnchor.constraint(equalTo: guide.leadingAnchor),
             previewPane.centerYAnchor.constraint(equalTo: guide.centerYAnchor),
             previewPane.trailingAnchor.constraint(equalTo: guide.trailingAnchor)
-            ])
+        ])
     }
 
     @objc private func refresh(_ sender: UIButton) {
@@ -75,7 +74,7 @@ final class PreviewViewController: UIViewController {
 
     private func refreshRandomViews() {
         var views = [UIView]()
-        for count in 0..<itemCount {
+        for count in 0 ..< itemCount {
             let view = UILabel()
             view.text = "\(count)"
             let size = CGFloat(arc4random_uniform(64)) + 64.0
