@@ -30,7 +30,6 @@ import UIKit
 
 @IBDesignable
 final class ConfirmView: UIView {
-
     private enum ViewMetrics {
         static let fontSize: CGFloat = 24.0
         static let backgroundColor: UIColor = .yellow

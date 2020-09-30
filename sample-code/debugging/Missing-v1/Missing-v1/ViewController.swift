@@ -29,7 +29,6 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
     private struct ViewMetrics {
         static let backgroundColor: UIColor = .yellow
         static let margin: CGFloat = 20.0
