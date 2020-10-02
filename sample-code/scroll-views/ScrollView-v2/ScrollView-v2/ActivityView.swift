@@ -29,7 +29,6 @@
 import UIKit
 
 final class ActivityView: UIView {
-
     private enum ViewMetrics {
         static let labelFontSize: CGFloat = 56.0
         static let buttonFontSize: CGFloat = 32.0

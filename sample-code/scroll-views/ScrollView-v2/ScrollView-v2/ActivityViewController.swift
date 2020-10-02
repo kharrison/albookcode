@@ -29,7 +29,6 @@
 import UIKit
 
 final class ActivityViewController: UIViewController {
-
     private let activityView: ActivityView = {
         let view = ActivityView()
         view.translatesAutoresizingMaskIntoConstraints = false
