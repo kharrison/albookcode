@@ -33,7 +33,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
         let title = "Chapter 1"
         let text = """
         My father's family name being Pirrip, and my \
@@ -45,7 +44,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let footnote = "Great Expectations by Charles Dickens"
         let quote = Quote(title: title, text: text, footnote: footnote)
         if let navigationController = window?.rootViewController as? UINavigationController,
-            let quoteViewController = navigationController.topViewController as? QuoteViewController {
+            let quoteViewController = navigationController.topViewController as? QuoteViewController
+        {
             quoteViewController.quote = quote
         }
 
