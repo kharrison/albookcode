@@ -29,7 +29,6 @@
 import UIKit
 
 final class QuoteViewController: UIViewController {
-
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var textView: UITextView!
     @IBOutlet private var footnoteLabel: UILabel!
