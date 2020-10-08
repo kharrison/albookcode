@@ -29,7 +29,6 @@
 import UIKit
 
 final class QuoteViewController: UIViewController {
-
     private let padding: CGFloat = 20.0
 
     var quote: Quote? {
@@ -64,7 +63,7 @@ final class QuoteViewController: UIViewController {
             stackView.topAnchor.constraint(equalTo: readableGuide.topAnchor),
             stackView.trailingAnchor.constraint(equalTo: readableGuide.trailingAnchor),
             stackView.bottomAnchor.constraint(equalTo: readableGuide.bottomAnchor)
-            ])
+        ])
         return view
     }()
 
@@ -98,6 +97,6 @@ final class QuoteViewController: UIViewController {
             contentGuide.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
 
             frameGuide.widthAnchor.constraint(equalTo: contentGuide.widthAnchor)
-            ])
+        ])
     }
 }
