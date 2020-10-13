@@ -29,7 +29,6 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
     @IBOutlet private var headline: UILabel!
     @IBOutlet private var body: UILabel!
     @IBOutlet private var footnote: UILabel!

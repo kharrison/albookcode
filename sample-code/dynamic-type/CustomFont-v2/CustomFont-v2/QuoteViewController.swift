@@ -29,7 +29,6 @@
 import UIKit
 
 final class QuoteViewController: UIViewController {
-
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var textLabel: UILabel!
     @IBOutlet private var footnoteLabel: UILabel!
@@ -48,7 +47,7 @@ final class QuoteViewController: UIViewController {
     }
 
     private lazy var scaledFont: ScaledFont = {
-        return ScaledFont(fontName: fontName)
+        ScaledFont(fontName: fontName)
     }()
 
     override func viewDidLoad() {
