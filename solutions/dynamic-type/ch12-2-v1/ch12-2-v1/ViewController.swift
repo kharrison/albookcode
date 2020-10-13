@@ -29,7 +29,6 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
     @IBOutlet private var headlineLabel: UILabel!
     @IBOutlet private var subheadlineLabel: UILabel!
 
@@ -45,7 +44,7 @@ final class ViewController: UIViewController {
 
     private func configureView() {
         let descriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .subheadline)
-        if let italicDescriptor = descriptor.withSymbolicTraits(.traitItalic){
+        if let italicDescriptor = descriptor.withSymbolicTraits(.traitItalic) {
             subheadlineLabel.font = UIFont(descriptor: italicDescriptor, size: 0)
         }
     }

@@ -30,11 +30,9 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
         let bookTitle = "The Wonderful Wizard of Oz"
         let author = "by L. Frank Baum"
         let chapterTitle = "1. The Cyclone"
@@ -69,7 +67,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let chapter = Chapter(bookTitle: bookTitle, author: author, chapterTitle: chapterTitle, text: text)
 
         if let navigationController = window?.rootViewController as? UINavigationController,
-            let bookViewController = navigationController.topViewController as? BookViewController {
+            let bookViewController = navigationController.topViewController as? BookViewController
+        {
             bookViewController.chapter = chapter
         }
 

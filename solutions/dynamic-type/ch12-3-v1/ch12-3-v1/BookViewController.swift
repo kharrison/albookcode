@@ -29,7 +29,6 @@
 import UIKit
 
 final class BookViewController: UIViewController {
-
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var authorLabel: UILabel!
     @IBOutlet private var chapterLabel: UILabel!
@@ -49,7 +48,7 @@ final class BookViewController: UIViewController {
     }
 
     private lazy var scaledFont: ScaledFont = {
-        return ScaledFont(fontName: fontName)
+        ScaledFont(fontName: fontName)
     }()
 
     override func viewDidLoad() {

@@ -29,7 +29,6 @@
 import UIKit
 
 final class BookViewController: UIViewController {
-
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var authorLabel: UILabel!
     @IBOutlet private var textView: UITextView!
