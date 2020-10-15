@@ -29,7 +29,6 @@
 import UIKit
 
 final class MessageTableViewController: UITableViewController {
-
     private var dataSource: MessageDataSource?
 
     override func viewDidLoad() {

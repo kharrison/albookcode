@@ -29,7 +29,6 @@
 import UIKit
 
 final class MessageDataSource: NSObject {
-
     private let tableView: UITableView
     private let messages: [Message] = [
         Message(username: "Joe", text: "Hello World!"),
@@ -47,7 +46,6 @@ final class MessageDataSource: NSObject {
 }
 
 extension MessageDataSource: UITableViewDataSource {
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return messages.count
     }

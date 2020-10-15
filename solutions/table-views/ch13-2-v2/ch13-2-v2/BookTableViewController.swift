@@ -29,7 +29,6 @@
 import UIKit
 
 final class BookTableViewController: UITableViewController {
-
     var book: Book? {
         didSet {
             if let book = book {
@@ -39,7 +38,7 @@ final class BookTableViewController: UITableViewController {
     }
 
     private var dataSource: BookDataSource? {
-        didSet { title = dataSource?.title}
+        didSet { title = dataSource?.title }
     }
 
     override func viewDidLoad() {

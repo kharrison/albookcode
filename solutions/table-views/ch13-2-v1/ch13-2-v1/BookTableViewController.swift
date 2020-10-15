@@ -29,7 +29,6 @@
 import UIKit
 
 final class BookTableViewController: UITableViewController {
-
     var book: Book? {
         didSet {
             if let book = book {

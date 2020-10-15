@@ -29,7 +29,6 @@
 import UIKit
 
 final class TextViewCell: UITableViewCell, ReusableIdentifier {
-
     let textView: UITextView = {
         let view = UITextView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -58,6 +57,6 @@ final class TextViewCell: UITableViewCell, ReusableIdentifier {
             margins.topAnchor.constraint(equalTo: textView.topAnchor),
             margins.trailingAnchor.constraint(equalTo: textView.trailingAnchor),
             margins.bottomAnchor.constraint(equalTo: textView.bottomAnchor)
-            ])
+        ])
     }
 }
