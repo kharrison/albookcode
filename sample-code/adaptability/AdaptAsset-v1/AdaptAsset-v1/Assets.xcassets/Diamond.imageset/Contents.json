@@ -1,27 +1,27 @@
 {
   "images" : [
     {
-      "idiom" : "universal",
-      "filename" : "diamond.pdf"
+      "filename" : "diamond.pdf",
+      "idiom" : "universal"
     },
     {
-      "idiom" : "universal",
-      "height-class" : "regular"
+      "height-class" : "regular",
+      "idiom" : "universal"
     },
     {
       "idiom" : "universal",
       "width-class" : "regular"
     },
     {
-      "idiom" : "universal",
       "filename" : "diamond200.pdf",
-      "width-class" : "regular",
-      "height-class" : "regular"
+      "height-class" : "regular",
+      "idiom" : "universal",
+      "width-class" : "regular"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   },
   "properties" : {
     "preserves-vector-representation" : true
