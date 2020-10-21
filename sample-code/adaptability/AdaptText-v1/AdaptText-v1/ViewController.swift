@@ -29,11 +29,10 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
     @IBOutlet private var label: UILabel!
     @IBOutlet private var stopButton: UIButton!
     @IBOutlet private var startButton: UIButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
