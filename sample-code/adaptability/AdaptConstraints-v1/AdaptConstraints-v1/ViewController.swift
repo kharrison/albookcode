@@ -29,7 +29,6 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
     private lazy var deleteButton: UIButton = {
         let title = NSLocalizedString("Delete All", comment: "Delete button")
         let button = UIButton.customButton(title: title, titleColor: .white, tintColor: .red, background: UIImage(named: "buttonTemplate"))
@@ -68,7 +67,7 @@ final class ViewController: UIViewController {
         return [
             deleteButton.topAnchor.constraint(equalTo: marginGuide.topAnchor),
             deleteButton.widthAnchor.constraint(equalTo: completeButton.widthAnchor)
-            ]
+        ]
     }()
 
     private lazy var wideConstraints: [NSLayoutConstraint] = {
