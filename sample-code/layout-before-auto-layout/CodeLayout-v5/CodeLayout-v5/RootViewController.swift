@@ -1,4 +1,4 @@
-//  Copyright © 2018 Keith Harrison. All rights reserved.
+//  Copyright © 2021 Keith Harrison. All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -29,25 +29,4 @@
 import UIKit
 
 final class RootViewController: UIViewController {
-    private let padding: CGFloat = 50.0
-
-    private let greenView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .green
-        view.autoresizingMask = [.flexibleWidth, .flexibleBottomMargin]
-        return view
-    }()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .yellow
-    }
-
-    override func viewWillLayoutSubviews() {
-        if greenView.superview == nil {
-            view.addSubview(greenView)
-            let width = view.bounds.width - 2 * padding
-            greenView.frame = CGRect(x: padding, y: padding, width: width, height: 3 * padding)
-        }
-    }
 }

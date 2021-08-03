@@ -1,5 +1,4 @@
-//  Created by Keith Harrison https://useyourloaf.com
-//  Copyright (c) 2018 Keith Harrison. All rights reserved.
+//  Copyright © 2021 Keith Harrison. All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -30,18 +29,10 @@
 import UIKit
 
 final class RootViewController: UIViewController {
-
-    // Override loadView() to build your view hierarchy
-    // in code.
-    // - Do NOT override loadView() if you are using a
-    // storyboard or nib file
-    // - Do NOT call super.
-
     override func loadView() {
         let rootView = UIView()
         rootView.backgroundColor = .yellow
         view = rootView
-
-        // other view setup
+        // other view setup...
     }
 }

@@ -1,5 +1,4 @@
-//  Created by Keith Harrison https://useyourloaf.com
-//  Copyright © 2019 Keith Harrison. All rights reserved.
+//  Copyright © 2021 Keith Harrison. All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -29,6 +28,6 @@
 
 import UIKit
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+@main
+final class AppDelegate: UIResponder, UIApplicationDelegate {
 }

@@ -29,7 +29,6 @@
 import UIKit
 
 final class RootViewController: UIViewController {
-
     private enum ViewMetrics {
         static let externalPadding: CGFloat = 50.0
         static let internalPadding: CGFloat = 25.0

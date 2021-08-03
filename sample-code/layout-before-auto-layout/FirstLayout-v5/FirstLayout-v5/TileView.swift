@@ -1,5 +1,4 @@
-//  Created by Keith Harrison https://useyourloaf.com
-//  Copyright © 2019 Keith Harrison. All rights reserved.
+//  Copyright © 2021 Keith Harrison. All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -36,13 +35,13 @@ final class TileView: UIView {
             setNeedsLayout()
         }
     }
-
+    
     private let redView: UIView = {
         let view = UIView()
         view.backgroundColor = .red
         return view
     }()
-
+    
     private let blueView: UIView = {
         let view = UIView()
         view.backgroundColor = .blue
@@ -53,30 +52,28 @@ final class TileView: UIView {
         super.init(frame: frame)
         setupView()
     }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    
+    required init?(coder aDecoder: NSCoder) { super.init(coder: aDecoder)
         setupView()
     }
-
+    
     private func setupView() {
         addSubview(blueView)
         addSubview(redView)
     }
-
-    override func layoutSubviews() {
-        super.layoutSubviews()
-
+    
+    override func layoutSubviews() { super.layoutSubviews()
         // Size of this container view
         let containerWidth = bounds.width
         let containerHeight = bounds.height
-
+        
         // Calculate width and height of each item
         // including the padding
         let numberOfItems: CGFloat = 2
-        let itemWidth = (containerWidth - (numberOfItems + 1) * padding) / numberOfItems
+        let itemWidth = (containerWidth - (numberOfItems + 1) *
+                         padding) / numberOfItems
         let itemHeight = containerHeight - 2 * padding
-
+        
         // Set the frames of the two subviews
         blueView.frame = CGRect(x: padding, y: padding, width: itemWidth, height: itemHeight)
         redView.frame = CGRect(x: 2 * padding + itemWidth, y: padding, width: itemWidth, height: itemHeight)
