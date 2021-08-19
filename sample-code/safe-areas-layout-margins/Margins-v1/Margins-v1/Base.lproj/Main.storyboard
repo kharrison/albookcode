@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5h4-dg-PlD">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19158" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5h4-dg-PlD">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19141"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,6 +33,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="YeA-Ez-CtZ"/>
                         <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1oj-k8-2Mg" firstAttribute="top" secondItem="YeA-Ez-CtZ" secondAttribute="top" id="D3Q-Bt-mRk"/>
@@ -42,7 +41,6 @@
                             <constraint firstAttribute="trailingMargin" secondItem="1oj-k8-2Mg" secondAttribute="trailing" id="OMr-Vr-Avv"/>
                             <constraint firstAttribute="leadingMargin" secondItem="1oj-k8-2Mg" secondAttribute="leading" id="eHR-kH-JRK"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="YeA-Ez-CtZ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Margins" id="TSe-9i-D1g"/>
                 </viewController>
