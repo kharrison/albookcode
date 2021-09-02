@@ -73,7 +73,6 @@ final class RootViewController: UIViewController {
             rootStackView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor)
             ])
     }
-
 }
 
 private extension UIButton {
