@@ -11,13 +11,13 @@
 		537B131F2271F889001D4565 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537B131D2271F889001D4565 /* Main.storyboard */; };
 		537B13212271F88A001D4565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 537B13202271F88A001D4565 /* Assets.xcassets */; };
 		537B13242271F88A001D4565 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537B13222271F88A001D4565 /* LaunchScreen.storyboard */; };
-		537B133B227207BF001D4565 /* ReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537B133A227207BF001D4565 /* ReusableIdentifier.swift */; };
-		537B133C227207BF001D4565 /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537B1335227207BE001D4565 /* BookTableViewController.swift */; };
-		537B133D227207BF001D4565 /* BookDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537B1337227207BE001D4565 /* BookDataSource.swift */; };
-		537B133E227207BF001D4565 /* LineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537B1338227207BF001D4565 /* LineCell.swift */; };
-		537B133F227207BF001D4565 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537B1339227207BF001D4565 /* Book.swift */; };
-		537B1340227316A2001D4565 /* Huckleberry.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537B1336227207BE001D4565 /* Huckleberry.plist */; };
 		537B1342227359F1001D4565 /* BookHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537B1341227359F1001D4565 /* BookHeaderView.swift */; };
+		5381702727074B8900AEB794 /* BookDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5381702127074B8900AEB794 /* BookDataSource.swift */; };
+		5381702827074B8900AEB794 /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5381702227074B8900AEB794 /* BookTableViewController.swift */; };
+		5381702927074B8900AEB794 /* Huckleberry.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5381702327074B8900AEB794 /* Huckleberry.plist */; };
+		5381702A27074B8900AEB794 /* LineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5381702427074B8900AEB794 /* LineCell.swift */; };
+		5381702B27074B8900AEB794 /* ReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5381702527074B8900AEB794 /* ReusableIdentifier.swift */; };
+		5381702C27074B8900AEB794 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5381702627074B8900AEB794 /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,13 +27,13 @@
 		537B13202271F88A001D4565 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		537B13232271F88A001D4565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		537B13252271F88A001D4565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		537B1335227207BE001D4565 /* BookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BookTableViewController.swift; path = "/Users/keith/Developer/iPhone/Repositories/albookcode/sample-code/table-views/TableHeader-v1/TableHeader-v1/BookTableViewController.swift"; sourceTree = "<absolute>"; };
-		537B1336227207BE001D4565 /* Huckleberry.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Huckleberry.plist; path = "/Users/keith/Developer/iPhone/Repositories/albookcode/sample-code/table-views/TableHeader-v1/TableHeader-v1/Huckleberry.plist"; sourceTree = "<absolute>"; };
-		537B1337227207BE001D4565 /* BookDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BookDataSource.swift; path = "/Users/keith/Developer/iPhone/Repositories/albookcode/sample-code/table-views/TableHeader-v1/TableHeader-v1/BookDataSource.swift"; sourceTree = "<absolute>"; };
-		537B1338227207BF001D4565 /* LineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LineCell.swift; path = "/Users/keith/Developer/iPhone/Repositories/albookcode/sample-code/table-views/TableHeader-v1/TableHeader-v1/LineCell.swift"; sourceTree = "<absolute>"; };
-		537B1339227207BF001D4565 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Book.swift; path = "/Users/keith/Developer/iPhone/Repositories/albookcode/sample-code/table-views/TableHeader-v1/TableHeader-v1/Book.swift"; sourceTree = "<absolute>"; };
-		537B133A227207BF001D4565 /* ReusableIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReusableIdentifier.swift; path = "/Users/keith/Developer/iPhone/Repositories/albookcode/sample-code/table-views/TableHeader-v1/TableHeader-v1/ReusableIdentifier.swift"; sourceTree = "<absolute>"; };
 		537B1341227359F1001D4565 /* BookHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHeaderView.swift; sourceTree = "<group>"; };
+		5381702127074B8900AEB794 /* BookDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDataSource.swift; sourceTree = "<group>"; };
+		5381702227074B8900AEB794 /* BookTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
+		5381702327074B8900AEB794 /* Huckleberry.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Huckleberry.plist; sourceTree = "<group>"; };
+		5381702427074B8900AEB794 /* LineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineCell.swift; sourceTree = "<group>"; };
+		5381702527074B8900AEB794 /* ReusableIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableIdentifier.swift; sourceTree = "<group>"; };
+		5381702627074B8900AEB794 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,16 +67,16 @@
 			isa = PBXGroup;
 			children = (
 				537B13192271F889001D4565 /* AppDelegate.swift */,
-				537B1339227207BF001D4565 /* Book.swift */,
-				537B1337227207BE001D4565 /* BookDataSource.swift */,
-				537B1335227207BE001D4565 /* BookTableViewController.swift */,
-				537B1338227207BF001D4565 /* LineCell.swift */,
+				5381702627074B8900AEB794 /* Book.swift */,
+				5381702127074B8900AEB794 /* BookDataSource.swift */,
 				537B1341227359F1001D4565 /* BookHeaderView.swift */,
-				537B133A227207BF001D4565 /* ReusableIdentifier.swift */,
+				5381702227074B8900AEB794 /* BookTableViewController.swift */,
+				5381702427074B8900AEB794 /* LineCell.swift */,
+				5381702527074B8900AEB794 /* ReusableIdentifier.swift */,
 				537B131D2271F889001D4565 /* Main.storyboard */,
 				537B13222271F88A001D4565 /* LaunchScreen.storyboard */,
 				537B13202271F88A001D4565 /* Assets.xcassets */,
-				537B1336227207BE001D4565 /* Huckleberry.plist */,
+				5381702327074B8900AEB794 /* Huckleberry.plist */,
 				537B13252271F88A001D4565 /* Info.plist */,
 			);
 			path = "TableHeader-v1";
@@ -143,7 +143,7 @@
 				537B13242271F88A001D4565 /* LaunchScreen.storyboard in Resources */,
 				537B13212271F88A001D4565 /* Assets.xcassets in Resources */,
 				537B131F2271F889001D4565 /* Main.storyboard in Resources */,
-				537B1340227316A2001D4565 /* Huckleberry.plist in Resources */,
+				5381702927074B8900AEB794 /* Huckleberry.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,12 +155,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				537B131A2271F889001D4565 /* AppDelegate.swift in Sources */,
-				537B133D227207BF001D4565 /* BookDataSource.swift in Sources */,
+				5381702B27074B8900AEB794 /* ReusableIdentifier.swift in Sources */,
+				5381702C27074B8900AEB794 /* Book.swift in Sources */,
 				537B1342227359F1001D4565 /* BookHeaderView.swift in Sources */,
-				537B133F227207BF001D4565 /* Book.swift in Sources */,
-				537B133C227207BF001D4565 /* BookTableViewController.swift in Sources */,
-				537B133B227207BF001D4565 /* ReusableIdentifier.swift in Sources */,
-				537B133E227207BF001D4565 /* LineCell.swift in Sources */,
+				5381702827074B8900AEB794 /* BookTableViewController.swift in Sources */,
+				5381702727074B8900AEB794 /* BookDataSource.swift in Sources */,
+				5381702A27074B8900AEB794 /* LineCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
