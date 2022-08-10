@@ -11,7 +11,6 @@
 		538746FC2059417E00B4EACC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538746FB2059417E00B4EACC /* ViewController.swift */; };
 		538746FE2059417F00B4EACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 538746FD2059417F00B4EACC /* Assets.xcassets */; };
 		538747012059417F00B4EACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 538746FF2059417F00B4EACC /* LaunchScreen.storyboard */; };
-		5387470B2059665F00B4EACC /* UIViewController+SafeAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5387470A2059665F00B4EACC /* UIViewController+SafeAnchor.swift */; };
 		5387470F20596E7E00B4EACC /* NestedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5387470E20596E7E00B4EACC /* NestedView.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,7 +21,6 @@
 		538746FD2059417F00B4EACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		538747002059417F00B4EACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		538747022059417F00B4EACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5387470A2059665F00B4EACC /* UIViewController+SafeAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+SafeAnchor.swift"; sourceTree = "<group>"; };
 		5387470E20596E7E00B4EACC /* NestedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +57,6 @@
 				538746F92059417E00B4EACC /* AppDelegate.swift */,
 				538746FB2059417E00B4EACC /* ViewController.swift */,
 				5387470E20596E7E00B4EACC /* NestedView.swift */,
-				5387470A2059665F00B4EACC /* UIViewController+SafeAnchor.swift */,
 				538746FD2059417F00B4EACC /* Assets.xcassets */,
 				538746FF2059417F00B4EACC /* LaunchScreen.storyboard */,
 				538747022059417F00B4EACC /* Info.plist */,
@@ -94,7 +91,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1400;
 				ORGANIZATIONNAME = "Keith Harrison";
 				TargetAttributes = {
 					538746F52059417E00B4EACC = {
@@ -140,7 +137,6 @@
 			files = (
 				538746FC2059417E00B4EACC /* ViewController.swift in Sources */,
 				5387470F20596E7E00B4EACC /* NestedView.swift in Sources */,
-				5387470B2059665F00B4EACC /* UIViewController+SafeAnchor.swift in Sources */,
 				538746FA2059417E00B4EACC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,7 +207,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -266,7 +262,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -282,6 +278,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "Margins-v3/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "Margins-v3/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -49,18 +49,14 @@ final class ViewController: UIViewController {
         changeNestedMargins(inset: margin)
 
         NSLayoutConstraint.activate([
-            nestedView.topAnchor.constraint(equalTo: safeTopAnchor),
-            nestedView.bottomAnchor.constraint(equalTo: safeBottomAnchor),
+            nestedView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            nestedView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             nestedView.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
             nestedView.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor)
             ])
     }
 
     private func changeNestedMargins(inset: CGFloat) {
-        if #available(iOS 11, *) {
-            nestedView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: inset, leading: inset, bottom: inset, trailing: inset)
-        } else {
-            nestedView.layoutMargins = UIEdgeInsets(top: inset, left: inset, bottom: inset, right: inset)
-        }
+        nestedView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: inset, leading: inset, bottom: inset, trailing: inset)
     }
 }
