@@ -45,7 +45,6 @@ final class RootViewController: UIViewController {
         let button = UIButton(type: .system)
         button.setTitle(NSLocalizedString("Share", comment: "Share"), for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: ViewMetrics.fontSize)
-        button.addTarget(self, action: #selector(shareAction(_:)), for: .touchUpInside)
         button.setContentHuggingPriority(.defaultLow + 1, for: .vertical)
         return button
     }()
@@ -72,6 +71,8 @@ final class RootViewController: UIViewController {
             stackView.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor),
             stackView.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor)
         ])
+        
+        button.addTarget(self, action: #selector(shareAction(_:)), for: .touchUpInside)
     }
 
     @objc private func shareAction(_ sender: UIButton) {
