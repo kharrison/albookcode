@@ -43,13 +43,7 @@ final class QuoteViewController: UIViewController {
         super.viewDidLoad()
         configureView()
 
-        if #available(iOS 10, *) {
-            [titleLabel, textLabel, footnoteLabel].forEach {
-                $0?.adjustsFontForContentSizeCategory = true
-            }
-        } else {
-            NotificationCenter.default.addObserver(self, selector: #selector(updateTextStyles(_:)), name: UIContentSizeCategory.didChangeNotification, object: nil)
-        }
+        NotificationCenter.default.addObserver(self, selector: #selector(updateTextStyles(_:)), name: UIContentSizeCategory.didChangeNotification, object: nil)
     }
 
     private func configureView() {
