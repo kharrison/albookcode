@@ -11,10 +11,10 @@
 		53492F0B20D403EE0017725F /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53492F0A20D403EE0017725F /* QuoteViewController.swift */; };
 		53492F0D20D403EF0017725F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53492F0C20D403EF0017725F /* Assets.xcassets */; };
 		53492F1020D403EF0017725F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53492F0E20D403EF0017725F /* LaunchScreen.storyboard */; };
-		53492F1A20D404050017725F /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53492F1920D404050017725F /* ScaledFont.swift */; };
 		53953296213AD2310080FE4B /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53953295213AD2310080FE4B /* Quote.swift */; };
 		53953298213AD2510080FE4B /* UILabel+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53953297213AD2510080FE4B /* UILabel+Style.swift */; };
-		53FA489F20D801690023A482 /* Noteworthy.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53492F1720D404050017725F /* Noteworthy.plist */; };
+		53C0003F28E20858003E8831 /* Noteworthy.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53C0003E28E2082C003E8831 /* Noteworthy.plist */; };
+		53C0004128E2FE4E003E8831 /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C0004028E2FE4E003E8831 /* ScaledFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +24,10 @@
 		53492F0C20D403EF0017725F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53492F0F20D403EF0017725F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53492F1120D403EF0017725F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		53492F1720D404050017725F /* Noteworthy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Noteworthy.plist; sourceTree = "<group>"; };
-		53492F1920D404050017725F /* ScaledFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
 		53953295213AD2310080FE4B /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		53953297213AD2510080FE4B /* UILabel+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Style.swift"; sourceTree = "<group>"; };
+		53C0003E28E2082C003E8831 /* Noteworthy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Noteworthy.plist; sourceTree = "<group>"; };
+		53C0004028E2FE4E003E8831 /* ScaledFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +64,8 @@
 				53492F0A20D403EE0017725F /* QuoteViewController.swift */,
 				53953295213AD2310080FE4B /* Quote.swift */,
 				53953297213AD2510080FE4B /* UILabel+Style.swift */,
-				53492F1720D404050017725F /* Noteworthy.plist */,
-				53492F1920D404050017725F /* ScaledFont.swift */,
+				53C0004028E2FE4E003E8831 /* ScaledFont.swift */,
+				53C0003E28E2082C003E8831 /* Noteworthy.plist */,
 				53492F0C20D403EF0017725F /* Assets.xcassets */,
 				53492F0E20D403EF0017725F /* LaunchScreen.storyboard */,
 				53492F1120D403EF0017725F /* Info.plist */,
@@ -89,6 +89,8 @@
 			dependencies = (
 			);
 			name = "CustomFont-v1";
+			packageProductDependencies = (
+			);
 			productName = "CustomFont-v1";
 			productReference = 53492F0520D403EE0017725F /* CustomFont-v1.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +120,8 @@
 				Base,
 			);
 			mainGroup = 53492EFC20D403EE0017725F;
+			packageReferences = (
+			);
 			productRefGroup = 53492F0620D403EE0017725F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,7 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53FA489F20D801690023A482 /* Noteworthy.plist in Resources */,
+				53C0003F28E20858003E8831 /* Noteworthy.plist in Resources */,
 				53492F0D20D403EF0017725F /* Assets.xcassets in Resources */,
 				53492F1020D403EF0017725F /* LaunchScreen.storyboard in Resources */,
 			);
@@ -147,9 +151,9 @@
 			files = (
 				53953296213AD2310080FE4B /* Quote.swift in Sources */,
 				53953298213AD2510080FE4B /* UILabel+Style.swift in Sources */,
-				53492F1A20D404050017725F /* ScaledFont.swift in Sources */,
 				53492F0B20D403EE0017725F /* QuoteViewController.swift in Sources */,
 				53492F0920D403EE0017725F /* AppDelegate.swift in Sources */,
+				53C0004128E2FE4E003E8831 /* ScaledFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
