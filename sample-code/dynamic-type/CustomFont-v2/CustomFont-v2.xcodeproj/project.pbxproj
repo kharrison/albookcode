@@ -18,9 +18,9 @@
 		53EE4BAE20D956600028BA09 /* NotoSerif-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53EE4BA920D956600028BA09 /* NotoSerif-BoldItalic.ttf */; };
 		53EE4BAF20D956600028BA09 /* NotoSerif-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53EE4BAA20D956600028BA09 /* NotoSerif-Italic.ttf */; };
 		53EE4BB020D956600028BA09 /* NotoSerif-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53EE4BAB20D956600028BA09 /* NotoSerif-Regular.ttf */; };
-		53EE4BB320D957090028BA09 /* NotoSerif.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53EE4BB120D957090028BA09 /* NotoSerif.plist */; };
-		53EE4BB420D957090028BA09 /* Noteworthy.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53EE4BB220D957090028BA09 /* Noteworthy.plist */; };
-		53EE4BB620D957110028BA09 /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EE4BB520D957110028BA09 /* ScaledFont.swift */; };
+		53FC556328E483CA00654B32 /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FC556228E483CA00654B32 /* ScaledFont.swift */; };
+		53FC556428E483E200654B32 /* NotoSerif.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53FC556028E483A800654B32 /* NotoSerif.plist */; };
+		53FC556528E483E700654B32 /* Noteworthy.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53FC556128E483A900654B32 /* Noteworthy.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,9 +37,9 @@
 		53EE4BA920D956600028BA09 /* NotoSerif-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerif-BoldItalic.ttf"; sourceTree = "<group>"; };
 		53EE4BAA20D956600028BA09 /* NotoSerif-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerif-Italic.ttf"; sourceTree = "<group>"; };
 		53EE4BAB20D956600028BA09 /* NotoSerif-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerif-Regular.ttf"; sourceTree = "<group>"; };
-		53EE4BB120D957090028BA09 /* NotoSerif.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NotoSerif.plist; sourceTree = "<group>"; };
-		53EE4BB220D957090028BA09 /* Noteworthy.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Noteworthy.plist; sourceTree = "<group>"; };
-		53EE4BB520D957110028BA09 /* ScaledFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
+		53FC556028E483A800654B32 /* NotoSerif.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NotoSerif.plist; sourceTree = "<group>"; };
+		53FC556128E483A900654B32 /* Noteworthy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Noteworthy.plist; sourceTree = "<group>"; };
+		53FC556228E483CA00654B32 /* ScaledFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,12 +73,12 @@
 			isa = PBXGroup;
 			children = (
 				53EE4BA620D956600028BA09 /* Noto_Serif */,
-				53EE4BB220D957090028BA09 /* Noteworthy.plist */,
-				53EE4BB120D957090028BA09 /* NotoSerif.plist */,
+				53FC556128E483A900654B32 /* Noteworthy.plist */,
+				53FC556028E483A800654B32 /* NotoSerif.plist */,
 				53EE4B9420D956470028BA09 /* AppDelegate.swift */,
 				53EE4B9620D956470028BA09 /* QuoteViewController.swift */,
 				53953299213AD8060080FE4B /* Quote.swift */,
-				53EE4BB520D957110028BA09 /* ScaledFont.swift */,
+				53FC556228E483CA00654B32 /* ScaledFont.swift */,
 				53EE4B9820D956470028BA09 /* Main.storyboard */,
 				53EE4B9B20D956470028BA09 /* Assets.xcassets */,
 				53EE4B9D20D956470028BA09 /* LaunchScreen.storyboard */,
@@ -163,8 +163,8 @@
 				53EE4B9F20D956470028BA09 /* LaunchScreen.storyboard in Resources */,
 				53EE4BAF20D956600028BA09 /* NotoSerif-Italic.ttf in Resources */,
 				53EE4BAD20D956600028BA09 /* NotoSerif-Bold.ttf in Resources */,
-				53EE4BB420D957090028BA09 /* Noteworthy.plist in Resources */,
-				53EE4BB320D957090028BA09 /* NotoSerif.plist in Resources */,
+				53FC556528E483E700654B32 /* Noteworthy.plist in Resources */,
+				53FC556428E483E200654B32 /* NotoSerif.plist in Resources */,
 				53EE4B9C20D956470028BA09 /* Assets.xcassets in Resources */,
 				53EE4B9A20D956470028BA09 /* Main.storyboard in Resources */,
 				53EE4BAE20D956600028BA09 /* NotoSerif-BoldItalic.ttf in Resources */,
@@ -179,8 +179,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5395329A213AD8060080FE4B /* Quote.swift in Sources */,
-				53EE4BB620D957110028BA09 /* ScaledFont.swift in Sources */,
 				53EE4B9720D956470028BA09 /* QuoteViewController.swift in Sources */,
+				53FC556328E483CA00654B32 /* ScaledFont.swift in Sources */,
 				53EE4B9520D956470028BA09 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
