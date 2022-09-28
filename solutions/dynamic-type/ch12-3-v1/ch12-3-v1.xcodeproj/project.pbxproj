@@ -15,9 +15,9 @@
 		5353C0C1213C464F00B77221 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5353C0B4213C464F00B77221 /* Roboto-Light.ttf */; };
 		5353C0C2213C464F00B77221 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5353C0B5213C464F00B77221 /* Roboto-LightItalic.ttf */; };
 		5353C0C9213C46EE00B77221 /* Roboto.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5353C0C8213C46EE00B77221 /* Roboto.plist */; };
-		5353C0CB213C470100B77221 /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353C0CA213C470100B77221 /* ScaledFont.swift */; };
 		5353C0CD213C476400B77221 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353C0CC213C476400B77221 /* BookViewController.swift */; };
 		5353C0CF213C499900B77221 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353C0CE213C499900B77221 /* Chapter.swift */; };
+		53FC556728E4982D00654B32 /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FC556628E4982D00654B32 /* ScaledFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,9 +41,9 @@
 		5353C0B9213C464F00B77221 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		5353C0BA213C464F00B77221 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		5353C0C8213C46EE00B77221 /* Roboto.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Roboto.plist; sourceTree = "<group>"; };
-		5353C0CA213C470100B77221 /* ScaledFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
 		5353C0CC213C476400B77221 /* BookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		5353C0CE213C499900B77221 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		53FC556628E4982D00654B32 /* ScaledFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 				5353C09B213C440B00B77221 /* AppDelegate.swift */,
 				5353C0CC213C476400B77221 /* BookViewController.swift */,
 				5353C0CE213C499900B77221 /* Chapter.swift */,
-				5353C0CA213C470100B77221 /* ScaledFont.swift */,
+				53FC556628E4982D00654B32 /* ScaledFont.swift */,
 				5353C0C8213C46EE00B77221 /* Roboto.plist */,
 				5353C09F213C440B00B77221 /* Main.storyboard */,
 				5353C0A2213C440C00B77221 /* Assets.xcassets */,
@@ -187,8 +187,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5353C0CD213C476400B77221 /* BookViewController.swift in Sources */,
-				5353C0CB213C470100B77221 /* ScaledFont.swift in Sources */,
 				5353C09C213C440B00B77221 /* AppDelegate.swift in Sources */,
+				53FC556728E4982D00654B32 /* ScaledFont.swift in Sources */,
 				5353C0CF213C499900B77221 /* Chapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
