@@ -34,7 +34,7 @@ import UIKit
     func noPanic(_ sender: PanicView)
 }
 
-@IBDesignable
+// @IBDesignable
 final class PanicView: UIView {
     @IBOutlet weak var delegate: PanicViewDelegate?
 
