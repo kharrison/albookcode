@@ -28,10 +28,7 @@
 
 import UIKit
 
-@IBDesignable
 final class RGBView: UIView {
-
-    @IBInspectable
     var spacing: CGFloat = 20 {
         didSet {
             setNeedsLayout()
@@ -86,4 +83,11 @@ final class RGBView: UIView {
             }
         }
     }
+}
+
+@available(iOS 17, *)
+#Preview("RGBView") {
+    let view = RGBView()
+    view.spacing = 50
+    return view
 }
