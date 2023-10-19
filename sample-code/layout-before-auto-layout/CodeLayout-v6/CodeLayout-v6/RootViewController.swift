@@ -1,4 +1,4 @@
-//  Copyright © 2021 Keith Harrison. All rights reserved.
+//  Copyright © 2023 Keith Harrison. All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -28,15 +28,33 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
-    @IBOutlet fileprivate var tileView: TileView!
+final class RootViewController: UIViewController {
+    private let padding: CGFloat = 50.0
+    
+    let greenView: TileView = {
+        let view = TileView()
+        view.backgroundColor = .green
+        view.autoresizingMask = [.flexibleWidth, .flexibleBottomMargin]
+        return view
+    }()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .yellow
+    }
+    
+    override func viewWillLayoutSubviews() {
+        if greenView.superview == nil {
+            view.addSubview(greenView)
+            let width = view.bounds.width - 2 * padding
+            greenView.frame = CGRect(x: padding, y: padding, width: width, height: 3 * padding)
+        }
+    }
 }
 
 @available(iOS 17, *)
-#Preview("ViewController") {
-    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-    let vc = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-    vc.loadViewIfNeeded()
-    vc.tileView.padding = 20.0
+#Preview {
+    let vc = RootViewController()
+    vc.greenView.padding = 30
     return vc
 }

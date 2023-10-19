@@ -31,7 +31,7 @@ import UIKit
 final class RootViewController: UIViewController {
     private let padding: CGFloat = 50.0
 
-    private let greenView: UIView = {
+    let greenView: UIView = {
         let view = UIView()
         view.backgroundColor = .green
         view.autoresizingMask = [.flexibleWidth, .flexibleBottomMargin]

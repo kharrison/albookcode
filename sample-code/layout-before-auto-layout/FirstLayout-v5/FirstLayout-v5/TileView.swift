@@ -28,9 +28,8 @@
 
 import UIKit
 
-@IBDesignable
 final class TileView: UIView {
-    @IBInspectable var padding: CGFloat = 25.0 {
+    var padding: CGFloat = 25.0 {
         didSet {
             setNeedsLayout()
         }
