@@ -30,7 +30,7 @@
 import UIKit
 
 final class ActivityViewController: UIViewController {
-    private let infoButton: UIButton = {
+    private lazy var infoButton: UIButton = {
         let button = UIButton(type: .infoDark)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(showInfo(_:)), for: .touchUpInside)
