@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eZf-2R-A5X" customClass="PanicView" customModule="Challenge9_2_v2" customModuleProvider="target">
-                                <rect key="frame" x="20" y="420.5" width="374" height="65"/>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="374" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="eZf-2R-A5X" customClass="PanicView" customModule="Challenge9_2_v2" customModuleProvider="target">
+                                <rect key="frame" x="20" y="405" width="374" height="100"/>
                                 <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="ZtS-Ml-bj8"/>
