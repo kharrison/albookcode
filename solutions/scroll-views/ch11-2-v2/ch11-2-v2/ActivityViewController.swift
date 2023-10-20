@@ -37,7 +37,7 @@ final class ActivityViewController: UIViewController {
         static let contentMargin: CGFloat = 8.0
     }
 
-    private let infoButton: UIButton = {
+    private lazy var infoButton: UIButton = {
         let button = UIButton(type: .infoDark)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(showInfo(_:)), for: .touchUpInside)
