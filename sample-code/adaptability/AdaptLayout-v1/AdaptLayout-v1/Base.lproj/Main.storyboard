@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xzb-Lv-Rzq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xzb-Lv-Rzq">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="3VK-HT-pM3" userLabel="ImageView">
-                                <rect key="frame" x="20" y="113" width="335" height="150"/>
+                                <rect key="frame" x="20" y="133" width="335" height="150"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3n4-dp-OeE" userLabel="Button">
-                                <rect key="frame" x="20" y="64" width="335" height="41"/>
+                                <rect key="frame" x="20" y="84" width="335" height="41"/>
                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Solar Panel">
@@ -45,28 +45,28 @@
                         <directionalEdgeInsets key="directionalLayoutMargins" top="20" leading="20" bottom="20" trailing="20"/>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="OyZ-Zz-PTq"/>
                                 <exclude reference="iFI-xb-GC5"/>
+                                <exclude reference="OyZ-Zz-PTq"/>
                                 <exclude reference="nWD-ur-zJL"/>
-                                <exclude reference="Uth-J1-XIV"/>
                                 <exclude reference="VzS-dm-txy"/>
-                                <exclude reference="Whl-sa-2Pf"/>
                                 <exclude reference="gN0-bM-UXp"/>
+                                <exclude reference="Whl-sa-2Pf"/>
+                                <exclude reference="Uth-J1-XIV"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
                                 <include reference="nWD-ur-zJL"/>
-                                <include reference="Whl-sa-2Pf"/>
                                 <include reference="gN0-bM-UXp"/>
+                                <include reference="Whl-sa-2Pf"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="constraints">
-                                <include reference="OyZ-Zz-PTq"/>
                                 <include reference="iFI-xb-GC5"/>
-                                <include reference="Uth-J1-XIV"/>
+                                <include reference="OyZ-Zz-PTq"/>
                                 <include reference="VzS-dm-txy"/>
+                                <include reference="Uth-J1-XIV"/>
                             </mask>
                         </variation>
                     </view>
@@ -74,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1088.0059970014993" y="-565.60000000000002"/>
+            <point key="canvasLocation" x="935" y="-564"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JNl-kr-3jO">
@@ -82,7 +82,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xzb-Lv-Rzq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5TP-OG-ZBP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

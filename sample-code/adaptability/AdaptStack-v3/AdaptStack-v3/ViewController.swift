@@ -44,13 +44,26 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        configureView(for: traitCollection)
+        // If you need to support prior to iOS 12,
+        // or you're not building against iOS 17
+        // configure the view here. The traits may
+        // not yet be set but we will get a call to
+        // traitCollectionDidChange to fix things.
+//        configureView()
+    }
+    
+    // viewIsAppearing was added in iOS 17 but is back
+    // deployable to iOS 13. It's called after the view
+    // is added to the hierarchy so the traits are set.
+    override func viewIsAppearing(_ animated: Bool) {
+        super.viewIsAppearing(animated)
+        configureView()
     }
 
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
         if previousTraitCollection?.verticalSizeClass != traitCollection.verticalSizeClass {
-            configureView(for: traitCollection)
+            configureView()
         }
     }
 
@@ -64,7 +77,7 @@ final class ViewController: UIViewController {
         ])
     }
 
-    private func configureView(for traitCollection: UITraitCollection) {
+    private func configureView() {
         if traitCollection.verticalSizeClass == .compact {
             stackView.axis = .horizontal
         } else {
