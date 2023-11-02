@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .white
 
         let todayViewController = TodayViewController()
-        let forecast = Forecast(title: "Weather For Today", condition: .sun, summary: "Today will be hot and sunny. If you are going out you will need a hat and sunglasses. There is a small chance of a heavy thunderstorm in the afternoon that could cause severe flooding so you may also want to take a boat.")
+        let forecast = Forecast(title: "Weather For Today", condition: .sun, summary: "Today will be hot and sunny. If you are going out you will need a hat and some sunglasses. There is a small chance of a heavy thunderstorm in the afternoon that could cause severe flooding so you may also want to take a boat!")
         todayViewController.forecast = forecast
         todayViewController.title = NSLocalizedString("Forecast", comment: "Forecast")
 

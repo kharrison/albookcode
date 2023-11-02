@@ -34,14 +34,14 @@ final class ViewController: UIViewController {
         static let fontSize: CGFloat = 40.0
     }
 
-    private let previewButton: UIButton = {
+    private lazy var previewButton: UIButton = {
         let title = NSLocalizedString("Preview", comment: "Preview button title")
         let button = UIButton.customButton(title: title, color: .yellow, fontSize: ViewMetrics.fontSize)
         button.addTarget(self, action: #selector(previewAction(_:)), for: .touchUpInside)
         return button
     }()
 
-    private let buyButton: UIButton = {
+    private lazy var buyButton: UIButton = {
         let title = NSLocalizedString("Buy", comment: "Buy button title")
         let button = UIButton.customButton(title: title, color: .green, fontSize: ViewMetrics.fontSize)
         button.addTarget(self, action: #selector(buyAction(_:)), for: .touchUpInside)
@@ -62,7 +62,7 @@ final class ViewController: UIViewController {
     }
 
     private func setupView() {
-        view.backgroundColor = .lightGray
+        view.backgroundColor = .systemGray3
         view.addSubview(stackView)
         let margin = view.layoutMarginsGuide
         NSLayoutConstraint.activate([
