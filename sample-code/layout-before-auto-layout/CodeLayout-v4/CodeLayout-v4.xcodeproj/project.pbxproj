@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53038D472F0C2CE1009BBFD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53038D462F0C2CE0009BBFD0 /* SceneDelegate.swift */; };
 		5379AD1B26B4988800FD3971 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5379AD1A26B4988800FD3971 /* AppDelegate.swift */; };
 		5379AD2426B4988900FD3971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5379AD2326B4988900FD3971 /* Assets.xcassets */; };
 		5379AD2726B4988900FD3971 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5379AD2526B4988900FD3971 /* LaunchScreen.storyboard */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53038D462F0C2CE0009BBFD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5379AD1726B4988800FD3971 /* CodeLayout-v4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CodeLayout-v4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5379AD1A26B4988800FD3971 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5379AD2326B4988900FD3971 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				5379AD1A26B4988800FD3971 /* AppDelegate.swift */,
+				53038D462F0C2CE0009BBFD0 /* SceneDelegate.swift */,
 				5379AD2E26B4993300FD3971 /* RootViewController.swift */,
 				5379AD2326B4988900FD3971 /* Assets.xcassets */,
 				5379AD2526B4988900FD3971 /* LaunchScreen.storyboard */,
@@ -89,7 +92,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1610;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					5379AD1626B4988800FD3971 = {
 						CreatedOnToolsVersion = 13.0;
@@ -131,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53038D472F0C2CE1009BBFD0 /* SceneDelegate.swift in Sources */,
 				5379AD2F26B4993300FD3971 /* RootViewController.swift in Sources */,
 				5379AD1B26B4988800FD3971 /* AppDelegate.swift in Sources */,
 			);
@@ -185,6 +189,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -207,8 +212,12 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -247,6 +256,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -262,8 +272,12 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -275,7 +289,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CodeLayout-v4/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -302,7 +315,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CodeLayout-v4/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
