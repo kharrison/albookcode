@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 90;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		533EC4162F2133E5001B3CF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533EC4152F2133E5001B3CF5 /* SceneDelegate.swift */; };
 		539FA28D203B7C5B001CF1FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539FA28C203B7C5B001CF1FD /* AppDelegate.swift */; };
 		539FA28F203B7C5B001CF1FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539FA28E203B7C5B001CF1FD /* ViewController.swift */; };
 		539FA292203B7C5B001CF1FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539FA290203B7C5B001CF1FD /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		533EC4152F2133E5001B3CF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		539FA289203B7C5B001CF1FD /* Challenge4-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Challenge4-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		539FA28C203B7C5B001CF1FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		539FA28E203B7C5B001CF1FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,10 +29,8 @@
 /* Begin PBXFrameworksBuildPhase section */
 		539FA286203B7C5B001CF1FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -55,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				539FA28C203B7C5B001CF1FD /* AppDelegate.swift */,
+				533EC4152F2133E5001B3CF5 /* SceneDelegate.swift */,
 				539FA28E203B7C5B001CF1FD /* ViewController.swift */,
 				539FA290203B7C5B001CF1FD /* Main.storyboard */,
 				539FA293203B7C5B001CF1FD /* Assets.xcassets */,
@@ -77,8 +78,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = "Challenge4-3";
 			productName = "Challenge4-3";
 			productReference = 539FA289203B7C5B001CF1FD /* Challenge4-3.app */;
@@ -92,7 +91,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 2620;
 				ORGANIZATIONNAME = "Keith Harrison";
 				TargetAttributes = {
 					539FA288203B7C5B001CF1FD = {
@@ -102,7 +101,6 @@
 				};
 			};
 			buildConfigurationList = 539FA284203B7C5B001CF1FD /* Build configuration list for PBXProject "Challenge4-3" */;
-			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -110,6 +108,7 @@
 				Base,
 			);
 			mainGroup = 539FA280203B7C5B001CF1FD;
+			preferredProjectObjectVersion = 90;
 			productRefGroup = 539FA28A203B7C5B001CF1FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -122,25 +121,22 @@
 /* Begin PBXResourcesBuildPhase section */
 		539FA287203B7C5B001CF1FD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				539FA297203B7C5B001CF1FD /* LaunchScreen.storyboard in Resources */,
 				539FA294203B7C5B001CF1FD /* Assets.xcassets in Resources */,
 				539FA292203B7C5B001CF1FD /* Main.storyboard in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		539FA285203B7C5B001CF1FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				539FA28F203B7C5B001CF1FD /* ViewController.swift in Sources */,
 				539FA28D203B7C5B001CF1FD /* AppDelegate.swift in Sources */,
+				533EC4162F2133E5001B3CF5 /* SceneDelegate.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
@@ -164,7 +160,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		539FA299203B7C5B001CF1FD /* Debug */ = {
+		539FA299203B7C5B001CF1FD /* Debug configuration for PBXProject "Challenge4-3" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -200,6 +196,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -217,16 +214,21 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
-		539FA29A203B7C5B001CF1FD /* Release */ = {
+		539FA29A203B7C5B001CF1FD /* Release configuration for PBXProject "Challenge4-3" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -262,6 +264,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -273,22 +276,27 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		539FA29C203B7C5B001CF1FD /* Debug */ = {
+		539FA29C203B7C5B001CF1FD /* Debug configuration for PBXNativeTarget "Challenge4-3" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "Challenge4-3/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,13 +308,13 @@
 			};
 			name = Debug;
 		};
-		539FA29D203B7C5B001CF1FD /* Release */ = {
+		539FA29D203B7C5B001CF1FD /* Release configuration for PBXNativeTarget "Challenge4-3" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "Challenge4-3/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,19 +332,17 @@
 		539FA284203B7C5B001CF1FD /* Build configuration list for PBXProject "Challenge4-3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				539FA299203B7C5B001CF1FD /* Debug */,
-				539FA29A203B7C5B001CF1FD /* Release */,
+				539FA299203B7C5B001CF1FD /* Debug configuration for PBXProject "Challenge4-3" */,
+				539FA29A203B7C5B001CF1FD /* Release configuration for PBXProject "Challenge4-3" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		539FA29B203B7C5B001CF1FD /* Build configuration list for PBXNativeTarget "Challenge4-3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				539FA29C203B7C5B001CF1FD /* Debug */,
-				539FA29D203B7C5B001CF1FD /* Release */,
+				539FA29C203B7C5B001CF1FD /* Debug configuration for PBXNativeTarget "Challenge4-3" */,
+				539FA29D203B7C5B001CF1FD /* Release configuration for PBXNativeTarget "Challenge4-3" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
