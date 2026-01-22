@@ -73,3 +73,8 @@ private extension UIView {
         return view
     }
 }
+
+@available(iOS 17, *)
+#Preview {
+    StopGoView()
+}
