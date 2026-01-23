@@ -30,3 +30,12 @@ import UIKit
 
 final class ViewController: UIViewController {
 }
+
+@available(iOS 17, *)
+#Preview {
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let vc =
+    storyboard.instantiateViewController(withIdentifier:
+    "ViewController") as! ViewController
+    return vc
+}
