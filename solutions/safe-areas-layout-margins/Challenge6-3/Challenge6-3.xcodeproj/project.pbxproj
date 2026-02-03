@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53E506FD2F3240FA004D9725 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E506FC2F3240FA004D9725 /* SceneDelegate.swift */; };
 		53EB9F1E2062A3D6001D21AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EB9F1D2062A3D6001D21AC /* AppDelegate.swift */; };
 		53EB9F222062A3D7001D21AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53EB9F212062A3D7001D21AC /* Assets.xcassets */; };
 		53EB9F252062A3D7001D21AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53EB9F232062A3D7001D21AC /* LaunchScreen.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53E506FC2F3240FA004D9725 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		53EB9F1A2062A3D6001D21AC /* Challenge6-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Challenge6-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53EB9F1D2062A3D6001D21AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53EB9F212062A3D7001D21AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,12 +56,13 @@
 		53EB9F1C2062A3D6001D21AC /* Challenge6-3 */ = {
 			isa = PBXGroup;
 			children = (
-				53EB9F2C2062A4E2001D21AC /* RootViewController.swift */,
-				53EB9F2E2062A518001D21AC /* TileView.swift */,
+				53EB9F262062A3D7001D21AC /* Info.plist */,
 				53EB9F1D2062A3D6001D21AC /* AppDelegate.swift */,
+				53EB9F2C2062A4E2001D21AC /* RootViewController.swift */,
+				53E506FC2F3240FA004D9725 /* SceneDelegate.swift */,
+				53EB9F2E2062A518001D21AC /* TileView.swift */,
 				53EB9F212062A3D7001D21AC /* Assets.xcassets */,
 				53EB9F232062A3D7001D21AC /* LaunchScreen.storyboard */,
-				53EB9F262062A3D7001D21AC /* Info.plist */,
 			);
 			path = "Challenge6-3";
 			sourceTree = "<group>";
@@ -92,7 +95,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 2620;
 				ORGANIZATIONNAME = "Keith Harrison";
 				TargetAttributes = {
 					53EB9F192062A3D6001D21AC = {
@@ -102,7 +105,6 @@
 				};
 			};
 			buildConfigurationList = 53EB9F152062A3D6001D21AC /* Build configuration list for PBXProject "Challenge6-3" */;
-			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -110,6 +112,7 @@
 				Base,
 			);
 			mainGroup = 53EB9F112062A3D6001D21AC;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 53EB9F1B2062A3D6001D21AC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +142,7 @@
 				53EB9F2D2062A4E2001D21AC /* RootViewController.swift in Sources */,
 				53EB9F2F2062A518001D21AC /* TileView.swift in Sources */,
 				53EB9F1E2062A3D6001D21AC /* AppDelegate.swift in Sources */,
+				53E506FD2F3240FA004D9725 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +196,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -213,8 +218,11 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -254,6 +262,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -268,8 +277,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -279,8 +291,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "Challenge6-3/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,8 +309,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "Challenge6-3/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
