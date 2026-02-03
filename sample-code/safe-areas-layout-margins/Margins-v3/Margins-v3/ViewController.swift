@@ -60,3 +60,8 @@ final class ViewController: UIViewController {
         nestedView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: inset, leading: inset, bottom: inset, trailing: inset)
     }
 }
+
+@available(iOS 17, *)
+#Preview {
+    ViewController()
+}
