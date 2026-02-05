@@ -77,3 +77,8 @@ final class RootViewController: UIViewController {
             ])
     }
 }
+
+@available(iOS 17, *)
+#Preview {
+    RootViewController()
+}

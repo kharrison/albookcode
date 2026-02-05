@@ -33,12 +33,19 @@ final class RootViewController: UIViewController {
 
     private lazy var shareButton: UIButton = {
         let button = UIButton(type: .custom)
+        button.tintColor = .black
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle(NSLocalizedString("Share", comment: "Share button title"), for: .normal)
-        button.backgroundColor = .yellow
-        button.setTitleColor(.black, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: fontSize)
-        button.contentEdgeInsets = UIEdgeInsets(top: 10.0, left: 20.0, bottom: 10.0, right: 20.0)
+  
+        var title = AttributedString(localized: "Share", comment: "Share button title")
+        title[AttributeScopes.UIKitAttributes.FontAttribute.self] = UIFont.systemFont(ofSize: fontSize)
+
+        var configuration = UIButton.Configuration.plain()
+        configuration.attributedTitle = title
+        configuration.background.backgroundColor = .yellow
+        configuration.cornerStyle = .small
+        configuration.contentInsets = NSDirectionalEdgeInsets(top: 10.0, leading: 20.0, bottom: 10.0, trailing: 20.0)
+        button.configuration = configuration
+        
         button.addTarget(self, action: #selector(shareQuote(_:)), for: .touchUpInside)
         return button
     }()
@@ -78,4 +85,9 @@ final class RootViewController: UIViewController {
     @objc private func shareQuote(_ sender: UIButton) {
         print("Share quote")
     }
+}
+
+@available(iOS 17, *)
+#Preview {
+    RootViewController()
 }
