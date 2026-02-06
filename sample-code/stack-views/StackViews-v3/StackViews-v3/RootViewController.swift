@@ -1,4 +1,4 @@
-//  Copyright © 2018 Keith Harrison. All rights reserved.
+//  Copyright © 2018-2026 Keith Harrison. All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -83,4 +83,9 @@ private extension UIButton {
         button.titleLabel?.font = UIFont.systemFont(ofSize: fontSize)
         return button
     }
+}
+
+@available(iOS 17, *)
+#Preview {
+    RootViewController()
 }
