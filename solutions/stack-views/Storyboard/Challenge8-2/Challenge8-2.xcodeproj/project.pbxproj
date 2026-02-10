@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53C277F02F3B89E100C65D86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C277EF2F3B89E100C65D86 /* SceneDelegate.swift */; };
 		53F37D96207BA1970038D0FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F37D95207BA1970038D0FC /* AppDelegate.swift */; };
 		53F37D98207BA1970038D0FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F37D97207BA1970038D0FC /* ViewController.swift */; };
 		53F37D9B207BA1970038D0FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F37D99207BA1970038D0FC /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53C277EF2F3B89E100C65D86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		53F37D92207BA1970038D0FC /* Challenge8-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Challenge8-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F37D95207BA1970038D0FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53F37D97207BA1970038D0FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				53F37D95207BA1970038D0FC /* AppDelegate.swift */,
+				53C277EF2F3B89E100C65D86 /* SceneDelegate.swift */,
 				53F37D97207BA1970038D0FC /* ViewController.swift */,
 				53F37D99207BA1970038D0FC /* Main.storyboard */,
 				53F37D9C207BA1980038D0FC /* Assets.xcassets */,
@@ -92,7 +95,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 2630;
 				ORGANIZATIONNAME = "Keith Harrison";
 				TargetAttributes = {
 					53F37D91207BA1970038D0FC = {
@@ -102,7 +105,6 @@
 				};
 			};
 			buildConfigurationList = 53F37D8D207BA1970038D0FC /* Build configuration list for PBXProject "Challenge8-2" */;
-			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -110,6 +112,7 @@
 				Base,
 			);
 			mainGroup = 53F37D89207BA1970038D0FC;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 53F37D93207BA1970038D0FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +142,7 @@
 			files = (
 				53F37D98207BA1970038D0FC /* ViewController.swift in Sources */,
 				53F37D96207BA1970038D0FC /* AppDelegate.swift in Sources */,
+				53C277F02F3B89E100C65D86 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +204,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -221,8 +226,11 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -262,6 +270,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -276,8 +285,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -287,8 +299,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "Challenge8-2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,8 +317,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "Challenge8-2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
