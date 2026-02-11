@@ -121,11 +121,21 @@ extension UIButton {
     static func makeButton(title: String, color: UIColor, fontSize: CGFloat) -> UIButton {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle(title, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: fontSize)
-        button.setTitleColor(.black, for: .normal)
-        button.contentEdgeInsets = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
         button.backgroundColor = color
+        
+        var configuration = UIButton.Configuration.plain()
+        var container = AttributeContainer()
+        container.font = UIFont.systemFont(ofSize: fontSize)
+        configuration.baseForegroundColor = .black
+        configuration.attributedTitle = AttributedString(title, attributes: container)
+        configuration.contentInsets = NSDirectionalEdgeInsets(top: 10.0, leading: 10.0, bottom: 10.0, trailing: 10.0)
+        configuration.cornerStyle = .small
+        button.configuration = configuration
         return button
     }
+}
+
+@available(iOS 17, *)
+#Preview {
+    PanicView()
 }

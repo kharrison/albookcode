@@ -88,3 +88,14 @@ public final class GridView: UIView {
         return columnPath
     }
 }
+
+@available(iOS 17, *)
+#Preview {
+    let view = GridView()
+    view.backgroundColor = .yellow
+    view.rowCount = 3
+    view.columnCount = 2
+    view.lineWidth = 4
+    view.lineColor = .purple
+    return view
+}

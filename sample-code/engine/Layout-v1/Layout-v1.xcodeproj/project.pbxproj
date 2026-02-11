@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		5381B4F120A43A730003DAF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5381B4F020A43A730003DAF1 /* Assets.xcassets */; };
 		5381B4F420A43A730003DAF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5381B4F220A43A730003DAF1 /* LaunchScreen.storyboard */; };
 		5381B4FC20A43B6D0003DAF1 /* PreviewPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5381B4FB20A43B6D0003DAF1 /* PreviewPane.swift */; };
+		53A801822F3C93AF00D17C66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A801812F3C93AF00D17C66 /* SceneDelegate.swift */; };
 		53B1251020A5D3E7000B0B73 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B1250F20A5D3E7000B0B73 /* PreviewViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		5381B4F320A43A730003DAF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5381B4F520A43A730003DAF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5381B4FB20A43B6D0003DAF1 /* PreviewPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPane.swift; sourceTree = "<group>"; };
+		53A801812F3C93AF00D17C66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		53B1250F20A5D3E7000B0B73 /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				5381B4E920A43A730003DAF1 /* AppDelegate.swift */,
+				53A801812F3C93AF00D17C66 /* SceneDelegate.swift */,
 				53B1250F20A5D3E7000B0B73 /* PreviewViewController.swift */,
 				5381B4FB20A43B6D0003DAF1 /* PreviewPane.swift */,
 				5381B4ED20A43A730003DAF1 /* Main.storyboard */,
@@ -95,7 +98,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 2630;
 				ORGANIZATIONNAME = "Keith Harrison";
 				TargetAttributes = {
 					5381B4E520A43A730003DAF1 = {
@@ -105,7 +108,6 @@
 				};
 			};
 			buildConfigurationList = 5381B4E120A43A730003DAF1 /* Build configuration list for PBXProject "Layout-v1" */;
-			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -113,6 +115,7 @@
 				Base,
 			);
 			mainGroup = 5381B4DD20A43A730003DAF1;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 5381B4E720A43A730003DAF1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,6 +146,7 @@
 				5381B4FC20A43B6D0003DAF1 /* PreviewPane.swift in Sources */,
 				5381B4EA20A43A730003DAF1 /* AppDelegate.swift in Sources */,
 				53B1251020A5D3E7000B0B73 /* PreviewViewController.swift in Sources */,
+				53A801822F3C93AF00D17C66 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +209,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -226,7 +231,9 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 6.0;
@@ -270,6 +277,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -284,6 +292,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_STRICT_CONCURRENCY = complete;
@@ -297,8 +307,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "Layout-v1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,8 +325,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "Layout-v1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
