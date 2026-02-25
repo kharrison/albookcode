@@ -57,10 +57,15 @@ final class ActivityView: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = .green
         let title = NSLocalizedString("Start", comment: "")
-        button.setTitle(title, for: .normal)
-        button.setTitleColor(.black, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: ViewMetrics.buttonFontSize)
-        button.contentEdgeInsets = UIEdgeInsets(top: ViewMetrics.buttonInset, left: 0.0, bottom: ViewMetrics.buttonInset, right: 0.0)
+
+        var configuration = UIButton.Configuration.plain()
+        var container = AttributeContainer()
+        container.font = UIFont.systemFont(ofSize: ViewMetrics.buttonFontSize)
+        container.foregroundColor = .black
+        configuration.attributedTitle = AttributedString(title, attributes: container)
+        configuration.cornerStyle = .small
+        configuration.contentInsets = NSDirectionalEdgeInsets(top: ViewMetrics.buttonInset, leading: 0.0, bottom: ViewMetrics.buttonInset, trailing: 0.0)
+        button.configuration = configuration
         return button
     }()
 
