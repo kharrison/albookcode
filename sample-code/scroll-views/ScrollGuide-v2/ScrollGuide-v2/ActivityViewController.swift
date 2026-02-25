@@ -73,3 +73,8 @@ final class ActivityViewController: UIViewController {
         ])
     }
 }
+
+@available(iOS 17, *)
+#Preview {
+    UINavigationController(rootViewController: ActivityViewController())
+}

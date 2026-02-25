@@ -90,3 +90,8 @@ extension ActivityViewController {
         print("Show Info")
     }
 }
+
+@available(iOS 17, *)
+#Preview {
+    UINavigationController(rootViewController:   ActivityViewController())
+}

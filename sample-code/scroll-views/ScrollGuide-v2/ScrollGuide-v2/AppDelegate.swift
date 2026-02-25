@@ -1,5 +1,5 @@
 //  Created by Keith Harrison https://useyourloaf.com
-//  Copyright © 2019 Keith Harrison. All rights reserved.
+//  Copyright © 2019-2026 Keith Harrison. All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -31,15 +31,4 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    var window: UIWindow?
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.backgroundColor = .white
-        let rootViewController = ActivityViewController()
-        let navigationController = UINavigationController(rootViewController: rootViewController)
-        window?.rootViewController = navigationController
-        window?.makeKeyAndVisible()
-        return true
-    }
 }
