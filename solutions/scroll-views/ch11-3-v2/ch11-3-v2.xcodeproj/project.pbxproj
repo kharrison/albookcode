@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		5379918B2138011A0096DD23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5379918A2138011A0096DD23 /* Assets.xcassets */; };
 		5379918E2138011A0096DD23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5379918C2138011A0096DD23 /* LaunchScreen.storyboard */; };
 		53799196213801A40096DD23 /* AdaptiveScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53799195213801A30096DD23 /* AdaptiveScrollView.swift */; };
+		537AAA192F50689400F0309C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537AAA182F50689400F0309C /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5379918D2138011A0096DD23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5379918F2138011A0096DD23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53799195213801A30096DD23 /* AdaptiveScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptiveScrollView.swift; sourceTree = "<group>"; };
+		537AAA182F50689400F0309C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				53799186213801190096DD23 /* AppDelegate.swift */,
+				537AAA182F50689400F0309C /* SceneDelegate.swift */,
 				53799188213801190096DD23 /* ActivityViewController.swift */,
 				53799195213801A30096DD23 /* AdaptiveScrollView.swift */,
 				5379918A2138011A0096DD23 /* Assets.xcassets */,
@@ -92,7 +95,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1610;
+				LastUpgradeCheck = 2630;
 				ORGANIZATIONNAME = "Keith Harrison";
 				TargetAttributes = {
 					53799182213801190096DD23 = {
@@ -102,7 +105,6 @@
 				};
 			};
 			buildConfigurationList = 5379917E213801190096DD23 /* Build configuration list for PBXProject "ch11-3-v2" */;
-			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -110,6 +112,7 @@
 				Base,
 			);
 			mainGroup = 5379917A213801190096DD23;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 53799184213801190096DD23 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +142,7 @@
 				53799187213801190096DD23 /* AppDelegate.swift in Sources */,
 				53799189213801190096DD23 /* ActivityViewController.swift in Sources */,
 				53799196213801A40096DD23 /* AdaptiveScrollView.swift in Sources */,
+				537AAA192F50689400F0309C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +196,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -209,13 +214,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
 			};
 			name = Debug;
 		};
@@ -255,6 +263,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -266,12 +275,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -281,7 +293,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "ch11-3-v2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,7 +310,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "ch11-3-v2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
