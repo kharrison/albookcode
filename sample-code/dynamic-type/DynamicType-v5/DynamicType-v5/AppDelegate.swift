@@ -1,4 +1,4 @@
-//  Copyright © 2018 Keith Harrison. All rights reserved.
+//  Copyright © 2018-2026 Keith Harrison. All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -30,31 +30,4 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    var window: UIWindow?
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.backgroundColor = .white
-
-        let title = "Chapter 1"
-        let text = """
-        My father's family name being Pirrip, and my \
-        Christian name Philip, my infant tongue could \
-        make of both names nothing longer or more \
-        explicit than Pip. So, I called myself Pip, \
-        and came to be called Pip.
-        """
-        let footnote = "Great Expectations by Charles Dickens"
-        let quote = Quote(title: title, text: text, footnote: footnote)
-        let quoteViewController = QuoteViewController()
-        quoteViewController.quote = quote
-
-        quoteViewController.title = NSLocalizedString("Quote", comment: "Quote")
-
-        let navigationController = UINavigationController(rootViewController: quoteViewController)
-        window?.rootViewController = navigationController
-        window?.makeKeyAndVisible()
-        return true
-    }
 }

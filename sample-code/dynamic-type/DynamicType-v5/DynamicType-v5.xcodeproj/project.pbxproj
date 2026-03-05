@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		532626B02F59CA2200A9469D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532626AF2F59CA2200A9469D /* SceneDelegate.swift */; };
 		53D19BF520D2AAB700FB1275 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D19BF420D2AAB700FB1275 /* AppDelegate.swift */; };
 		53D19BF720D2AAB700FB1275 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D19BF620D2AAB700FB1275 /* QuoteViewController.swift */; };
 		53D19BF920D2AAB700FB1275 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53D19BF820D2AAB700FB1275 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		532626AF2F59CA2200A9469D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		53D19BF120D2AAB700FB1275 /* DynamicType-v5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DynamicType-v5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D19BF420D2AAB700FB1275 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53D19BF620D2AAB700FB1275 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				53D19BF420D2AAB700FB1275 /* AppDelegate.swift */,
+				532626AF2F59CA2200A9469D /* SceneDelegate.swift */,
 				53D19BF620D2AAB700FB1275 /* QuoteViewController.swift */,
 				53F9FD6C213998F4007DA716 /* UILabel+Style.swift */,
 				53F9FD6A2139987E007DA716 /* Quote.swift */,
@@ -95,7 +98,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 1610;
+				LastUpgradeCheck = 2630;
 				ORGANIZATIONNAME = "Keith Harrison";
 				TargetAttributes = {
 					53D19BF020D2AAB700FB1275 = {
@@ -105,7 +108,6 @@
 				};
 			};
 			buildConfigurationList = 53D19BEC20D2AAB700FB1275 /* Build configuration list for PBXProject "DynamicType-v5" */;
-			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -113,6 +115,7 @@
 				Base,
 			);
 			mainGroup = 53D19BE820D2AAB700FB1275;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 53D19BF220D2AAB700FB1275 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				532626B02F59CA2200A9469D /* SceneDelegate.swift in Sources */,
 				53F9FD6D213998F4007DA716 /* UILabel+Style.swift in Sources */,
 				53D19BF720D2AAB700FB1275 /* QuoteViewController.swift in Sources */,
 				53F9FD6B2139987E007DA716 /* Quote.swift in Sources */,
@@ -196,6 +200,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -213,12 +218,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -258,6 +266,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -269,11 +278,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -283,7 +295,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "DynamicType-v5/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,7 +312,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "DynamicType-v5/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
