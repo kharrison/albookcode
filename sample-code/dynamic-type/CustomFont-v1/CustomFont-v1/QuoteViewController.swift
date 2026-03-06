@@ -27,6 +27,7 @@
 //  POSSIBILITY OF SUCH DAMAGE.
 
 import UIKit
+import ScaledFont
 
 final class QuoteViewController: UIViewController {
     private let padding: CGFloat = 20

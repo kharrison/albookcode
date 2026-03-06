@@ -27,6 +27,7 @@
 //  POSSIBILITY OF SUCH DAMAGE.
 
 import UIKit
+import ScaledFont
 
 final class QuoteViewController: UIViewController {
     @IBOutlet private var titleLabel: UILabel!

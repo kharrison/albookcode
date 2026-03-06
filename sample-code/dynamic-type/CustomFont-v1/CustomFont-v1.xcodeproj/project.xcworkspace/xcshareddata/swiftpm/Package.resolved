@@ -1,0 +1,15 @@
+{
+  "originHash" : "512bd3eaaa3156f5709421bb3acd935a89201a3be238de34842a9dca97584ca3",
+  "pins" : [
+    {
+      "identity" : "scaledfont",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kharrison/ScaledFont",
+      "state" : {
+        "revision" : "287a1348f790c81247b79be6a681128e2af04cfb",
+        "version" : "1.0.7"
+      }
+    }
+  ],
+  "version" : 3
+}

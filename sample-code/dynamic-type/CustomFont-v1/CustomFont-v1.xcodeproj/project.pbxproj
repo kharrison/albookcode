@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		532528AA2F5AF5E800DC9AC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532528A92F5AF5E800DC9AC9 /* SceneDelegate.swift */; };
+		532528AD2F5AF68A00DC9AC9 /* ScaledFont in Frameworks */ = {isa = PBXBuildFile; productRef = 532528AC2F5AF68A00DC9AC9 /* ScaledFont */; };
 		53492F0920D403EE0017725F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53492F0820D403EE0017725F /* AppDelegate.swift */; };
 		53492F0B20D403EE0017725F /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53492F0A20D403EE0017725F /* QuoteViewController.swift */; };
 		53492F0D20D403EF0017725F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53492F0C20D403EF0017725F /* Assets.xcassets */; };
@@ -14,10 +16,10 @@
 		53953296213AD2310080FE4B /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53953295213AD2310080FE4B /* Quote.swift */; };
 		53953298213AD2510080FE4B /* UILabel+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53953297213AD2510080FE4B /* UILabel+Style.swift */; };
 		53C0003F28E20858003E8831 /* Noteworthy.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53C0003E28E2082C003E8831 /* Noteworthy.plist */; };
-		53C0004128E2FE4E003E8831 /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C0004028E2FE4E003E8831 /* ScaledFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		532528A92F5AF5E800DC9AC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		53492F0520D403EE0017725F /* CustomFont-v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CustomFont-v1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53492F0820D403EE0017725F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53492F0A20D403EE0017725F /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
@@ -27,7 +29,6 @@
 		53953295213AD2310080FE4B /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		53953297213AD2510080FE4B /* UILabel+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Style.swift"; sourceTree = "<group>"; };
 		53C0003E28E2082C003E8831 /* Noteworthy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Noteworthy.plist; sourceTree = "<group>"; };
-		53C0004028E2FE4E003E8831 /* ScaledFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				532528AD2F5AF68A00DC9AC9 /* ScaledFont in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,10 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				53492F0820D403EE0017725F /* AppDelegate.swift */,
+				532528A92F5AF5E800DC9AC9 /* SceneDelegate.swift */,
 				53492F0A20D403EE0017725F /* QuoteViewController.swift */,
 				53953295213AD2310080FE4B /* Quote.swift */,
 				53953297213AD2510080FE4B /* UILabel+Style.swift */,
-				53C0004028E2FE4E003E8831 /* ScaledFont.swift */,
 				53C0003E28E2082C003E8831 /* Noteworthy.plist */,
 				53492F0C20D403EF0017725F /* Assets.xcassets */,
 				53492F0E20D403EF0017725F /* LaunchScreen.storyboard */,
@@ -90,6 +92,7 @@
 			);
 			name = "CustomFont-v1";
 			packageProductDependencies = (
+				532528AC2F5AF68A00DC9AC9 /* ScaledFont */,
 			);
 			productName = "CustomFont-v1";
 			productReference = 53492F0520D403EE0017725F /* CustomFont-v1.app */;
@@ -103,7 +106,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 1610;
+				LastUpgradeCheck = 2630;
 				ORGANIZATIONNAME = "Keith Harrison";
 				TargetAttributes = {
 					53492F0420D403EE0017725F = {
@@ -113,7 +116,6 @@
 				};
 			};
 			buildConfigurationList = 53492F0020D403EE0017725F /* Build configuration list for PBXProject "CustomFont-v1" */;
-			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -122,7 +124,9 @@
 			);
 			mainGroup = 53492EFC20D403EE0017725F;
 			packageReferences = (
+				532528AB2F5AF68A00DC9AC9 /* XCRemoteSwiftPackageReference "ScaledFont" */,
 			);
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 53492F0620D403EE0017725F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -154,7 +158,7 @@
 				53953298213AD2510080FE4B /* UILabel+Style.swift in Sources */,
 				53492F0B20D403EE0017725F /* QuoteViewController.swift in Sources */,
 				53492F0920D403EE0017725F /* AppDelegate.swift in Sources */,
-				53C0004128E2FE4E003E8831 /* ScaledFont.swift in Sources */,
+				532528AA2F5AF5E800DC9AC9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +212,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -225,12 +230,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -270,6 +278,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -281,11 +290,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -295,7 +307,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "CustomFont-v1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,7 +324,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "CustomFont-v1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -348,6 +358,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		532528AB2F5AF68A00DC9AC9 /* XCRemoteSwiftPackageReference "ScaledFont" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kharrison/ScaledFont";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		532528AC2F5AF68A00DC9AC9 /* ScaledFont */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 532528AB2F5AF68A00DC9AC9 /* XCRemoteSwiftPackageReference "ScaledFont" */;
+			productName = ScaledFont;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 53492EFD20D403EE0017725F /* Project object */;
 }
