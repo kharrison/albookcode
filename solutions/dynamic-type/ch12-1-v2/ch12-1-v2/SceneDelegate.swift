@@ -1,4 +1,4 @@
-//  Copyright © 2018-2026 Keith Harrison. All rights reserved.
+//  Copyright © 2026 Keith Harrison. All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -28,6 +28,36 @@
 
 import UIKit
 
-@main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+    var window: UIWindow?
+
+    func scene(
+        _ scene: UIScene, willConnectTo session: UISceneSession,
+        options connectionOptions: UIScene.ConnectionOptions
+    ) {
+        guard let scene = (scene as? UIWindowScene) else {
+            return
+        }
+        
+        let title = "Great Expectations"
+        let author = "Charles Dickens"
+        let text = """
+        My father's family name being Pirrip, and my \
+        Christian name Philip, my infant tongue could \
+        make of both names nothing longer or more \
+        explicit than Pip. So, I called myself Pip, \
+        and came to be called Pip.
+        """
+        let book = Book(title: title, author: author, text: text)
+        let bookViewController = BookViewController()
+        bookViewController.book = book
+        bookViewController.title = NSLocalizedString("Book", comment: "Book")
+
+        let navigationController = UINavigationController(rootViewController: bookViewController)
+        
+        window = UIWindow(windowScene: scene)
+        window?.backgroundColor = .white
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+    }
 }
