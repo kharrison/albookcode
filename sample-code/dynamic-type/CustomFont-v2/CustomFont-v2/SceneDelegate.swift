@@ -34,15 +34,16 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(
         _ scene: UIScene, willConnectTo session: UISceneSession,
         options connectionOptions: UIScene.ConnectionOptions
-    ) {       
+    ) {
+//        listFonts()
         let title = "Chapter 1"
         let text = """
-        My father's family name being Pirrip, and my \
-        Christian name Philip, my infant tongue could \
-        make of both names nothing longer or more \
-        explicit than Pip. So, I called myself Pip, \
-        and came to be called Pip.
-        """
+            My father's family name being Pirrip, and my \
+            Christian name Philip, my infant tongue could \
+            make of both names nothing longer or more \
+            explicit than Pip. So, I called myself Pip, \
+            and came to be called Pip.
+            """
         let footnote = "Great Expectations by Charles Dickens"
         let quote = Quote(title: title, text: text, footnote: footnote)
         if let navigationController = window?.rootViewController as? UINavigationController,
@@ -50,6 +51,15 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         {
             quoteViewController.quote = quote
             quoteViewController.fontName = "NotoSerif"
+        }
+    }
+
+    private func listFonts() {
+        let families = UIFont.familyNames
+        families.sorted().forEach {
+            print("\($0)")
+            let names = UIFont.fontNames(forFamilyName: $0)
+            print(names)
         }
     }
 }
