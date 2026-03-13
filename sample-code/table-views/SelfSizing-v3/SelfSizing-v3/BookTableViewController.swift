@@ -46,3 +46,11 @@ final class BookTableViewController: UITableViewController {
         tableView.register(LineCell.self, forCellReuseIdentifier: LineCell.reuseIdentifier)
     }
 }
+
+@available(iOS 17, *)
+#Preview {
+    let bookTableViewController = BookTableViewController(style: .plain)
+    let url = Bundle.main.url(forResource: "Huckleberry", withExtension: "plist")
+    bookTableViewController.bookUrl = url
+    return UINavigationController(rootViewController: bookTableViewController)
+}
