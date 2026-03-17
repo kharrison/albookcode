@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		534DEF1020E39F7D008B40E2 /* Huckleberry.plist in Resources */ = {isa = PBXBuildFile; fileRef = 534DEF0F20E39F7C008B40E2 /* Huckleberry.plist */; };
 		534DEF1220E3A1B2008B40E2 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534DEF1120E3A1B2008B40E2 /* Book.swift */; };
+		537BD1AC2F699B48001CC123 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537BD1AB2F699B48001CC123 /* SceneDelegate.swift */; };
 		53C21E1C20EB87FE00C4CF75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53C21E1A20EB87FE00C4CF75 /* Main.storyboard */; };
 		53D4A44A20E28E1500D2A65A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D4A44920E28E1500D2A65A /* AppDelegate.swift */; };
 		53D4A45120E28E1600D2A65A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53D4A45020E28E1600D2A65A /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		534DEF0F20E39F7C008B40E2 /* Huckleberry.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Huckleberry.plist; sourceTree = "<group>"; };
 		534DEF1120E3A1B2008B40E2 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		537BD1AB2F699B48001CC123 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		53C21E1B20EB87FE00C4CF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53D4A44620E28E1500D2A65A /* ReadableTable-v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReadableTable-v1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D4A44920E28E1500D2A65A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				53D4A45F20E2950F00D2A65A /* BookTableViewController.swift */,
 				53C21E1A20EB87FE00C4CF75 /* Main.storyboard */,
 				53D4A44920E28E1500D2A65A /* AppDelegate.swift */,
+				537BD1AB2F699B48001CC123 /* SceneDelegate.swift */,
 				53D4A45D20E2941B00D2A65A /* LineCell.swift */,
 				53D4A45020E28E1600D2A65A /* Assets.xcassets */,
 				53D4A45220E28E1600D2A65A /* LaunchScreen.storyboard */,
@@ -107,7 +110,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 1610;
+				LastUpgradeCheck = 2630;
 				ORGANIZATIONNAME = "Keith Harrison";
 				TargetAttributes = {
 					53D4A44520E28E1500D2A65A = {
@@ -117,7 +120,6 @@
 				};
 			};
 			buildConfigurationList = 53D4A44120E28E1500D2A65A /* Build configuration list for PBXProject "ReadableTable-v1" */;
-			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -125,6 +127,7 @@
 				Base,
 			);
 			mainGroup = 53D4A43D20E28E1500D2A65A;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 53D4A44720E28E1500D2A65A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53D4A44A20E28E1500D2A65A /* AppDelegate.swift in Sources */,
+				537BD1AC2F699B48001CC123 /* SceneDelegate.swift in Sources */,
 				53D4A45E20E2941B00D2A65A /* LineCell.swift in Sources */,
 				534DEF1220E3A1B2008B40E2 /* Book.swift in Sources */,
 				53D4A46220E295EC00D2A65A /* BookDataSource.swift in Sources */,
@@ -220,6 +224,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -237,12 +242,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -282,6 +290,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -293,11 +302,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -307,7 +319,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "ReadableTable-v1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -325,7 +336,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "ReadableTable-v1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

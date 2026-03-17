@@ -1,4 +1,4 @@
-//  Copyright © 2018 Keith Harrison. All rights reserved.
+//  Copyright © 2018-2026 Keith Harrison. All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -30,19 +30,4 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    var window: UIWindow?
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.backgroundColor = .white
-
-        let bookTableViewController = BookTableViewController(style: .plain)
-        let navigationController = UINavigationController(rootViewController: bookTableViewController)
-        let url = Bundle.main.url(forResource: "Huckleberry", withExtension: "plist")
-        bookTableViewController.bookUrl = url
-
-        window?.rootViewController = navigationController
-        window?.makeKeyAndVisible()
-        return true
-    }
 }
