@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		537B13212271F88A001D4565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 537B13202271F88A001D4565 /* Assets.xcassets */; };
 		537B13242271F88A001D4565 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537B13222271F88A001D4565 /* LaunchScreen.storyboard */; };
 		537B1342227359F1001D4565 /* BookHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537B1341227359F1001D4565 /* BookHeaderView.swift */; };
+		537BD1B02F69A1BF001CC123 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537BD1AF2F69A1BF001CC123 /* SceneDelegate.swift */; };
 		5381702727074B8900AEB794 /* BookDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5381702127074B8900AEB794 /* BookDataSource.swift */; };
 		5381702827074B8900AEB794 /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5381702227074B8900AEB794 /* BookTableViewController.swift */; };
 		5381702927074B8900AEB794 /* Huckleberry.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5381702327074B8900AEB794 /* Huckleberry.plist */; };
@@ -28,6 +29,7 @@
 		537B13232271F88A001D4565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		537B13252271F88A001D4565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		537B1341227359F1001D4565 /* BookHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHeaderView.swift; sourceTree = "<group>"; };
+		537BD1AF2F69A1BF001CC123 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5381702127074B8900AEB794 /* BookDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDataSource.swift; sourceTree = "<group>"; };
 		5381702227074B8900AEB794 /* BookTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
 		5381702327074B8900AEB794 /* Huckleberry.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Huckleberry.plist; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				537B13192271F889001D4565 /* AppDelegate.swift */,
+				537BD1AF2F69A1BF001CC123 /* SceneDelegate.swift */,
 				5381702627074B8900AEB794 /* Book.swift */,
 				5381702127074B8900AEB794 /* BookDataSource.swift */,
 				537B1341227359F1001D4565 /* BookHeaderView.swift */,
@@ -110,7 +113,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1610;
+				LastUpgradeCheck = 2630;
 				ORGANIZATIONNAME = "Keith Harrison";
 				TargetAttributes = {
 					537B13152271F889001D4565 = {
@@ -119,7 +122,6 @@
 				};
 			};
 			buildConfigurationList = 537B13112271F889001D4565 /* Build configuration list for PBXProject "TableHeader-v1" */;
-			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -127,6 +129,7 @@
 				Base,
 			);
 			mainGroup = 537B130D2271F889001D4565;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 537B13172271F889001D4565 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -162,6 +165,7 @@
 				5381702827074B8900AEB794 /* BookTableViewController.swift in Sources */,
 				5381702727074B8900AEB794 /* BookDataSource.swift in Sources */,
 				5381702A27074B8900AEB794 /* LineCell.swift in Sources */,
+				537BD1B02F69A1BF001CC123 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +227,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -240,13 +245,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -286,6 +295,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -297,12 +307,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -312,7 +326,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "TableHeader-v1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -330,7 +343,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "TableHeader-v1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
