@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5394E9562F719A96009BF12A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5394E9552F719A96009BF12A /* SceneDelegate.swift */; };
 		53A1F3F32281DFF600A5D80C /* BookHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53A1F3F52281DFF600A5D80C /* BookHeaderView.xib */; };
 		53E6D7EE227734FD00325AB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E6D7ED227734FD00325AB7 /* AppDelegate.swift */; };
 		53E6D7F3227734FD00325AB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53E6D7F1227734FD00325AB7 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5394E9552F719A96009BF12A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		53A1F3F42281DFF600A5D80C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BookHeaderView.xib; sourceTree = "<group>"; };
 		53E6D7EA227734FD00325AB7 /* TableHeader-v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TableHeader-v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E6D7ED227734FD00325AB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				53E6D7ED227734FD00325AB7 /* AppDelegate.swift */,
+				5394E9552F719A96009BF12A /* SceneDelegate.swift */,
 				53E6D7FF227735A300325AB7 /* Book.swift */,
 				53E6D805227735A300325AB7 /* BookDataSource.swift */,
 				53E6D802227735A300325AB7 /* BookTableViewController.swift */,
@@ -116,7 +119,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1610;
+				LastUpgradeCheck = 2630;
 				ORGANIZATIONNAME = "Keith Harrison";
 				TargetAttributes = {
 					53E6D7E9227734FD00325AB7 = {
@@ -125,7 +128,6 @@
 				};
 			};
 			buildConfigurationList = 53E6D7E5227734FD00325AB7 /* Build configuration list for PBXProject "TableHeader-v2" */;
-			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -133,6 +135,7 @@
 				Base,
 			);
 			mainGroup = 53E6D7E1227734FD00325AB7;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 53E6D7EB227734FD00325AB7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -170,6 +173,7 @@
 				53E6D807227735A300325AB7 /* BookHeaderView.swift in Sources */,
 				53E6D7EE227734FD00325AB7 /* AppDelegate.swift in Sources */,
 				53E6D80C227735A300325AB7 /* BookDataSource.swift in Sources */,
+				5394E9562F719A96009BF12A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +251,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -264,13 +269,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -310,6 +318,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -321,12 +330,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -336,7 +348,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "TableHeader-v2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -354,7 +365,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "TableHeader-v2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
