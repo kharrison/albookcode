@@ -35,7 +35,27 @@ final class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        configureView(for: traitCollection)
+
+        // If we are targetting a minimum of iOS 17
+        // we can register for trait changes and remove
+        // the deprecated traitCollectionDidChange method
+//        if #available(iOS 17.0, *) {
+//            registerForTraitChanges([UITraitPreferredContentSizeCategory.self]) {
+//                (
+//                    self: Self,
+//                    _: UITraitCollection
+//                ) in
+//                self.configureView()
+//            }
+//        }
+    }
+
+    // viewIsAppearing was added in iOS 17 but is back
+    // deployable to iOS 13. It's called after the view
+    // is added to the hierarchy so the traits are set.
+    override func viewIsAppearing(_ animated: Bool) {
+        super.viewIsAppearing(animated)
+        configureView()
     }
 
     @IBAction func largerType(_ sender: UISwitch) {
@@ -55,20 +75,26 @@ final class SettingsViewController: UIViewController {
             backgroundView.leadingAnchor.constraint(equalTo: stackView.leadingAnchor),
             backgroundView.topAnchor.constraint(equalTo: stackView.topAnchor),
             backgroundView.trailingAnchor.constraint(equalTo: stackView.trailingAnchor),
-            backgroundView.bottomAnchor.constraint(equalTo: stackView.bottomAnchor)
+            backgroundView.bottomAnchor.constraint(equalTo: stackView.bottomAnchor),
         ])
     }
 }
 
 extension SettingsViewController {
+    // If we need to support prior to iOS 17 use the
+    // deprecated traitCollectionDidChange method. For
+    // iOS 17 and later we can remove this and rely on
+    // registerForTraitChanges.
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
-        if previousTraitCollection?.preferredContentSizeCategory != traitCollection.preferredContentSizeCategory {
-            configureView(for: traitCollection)
+        if previousTraitCollection?.preferredContentSizeCategory
+            != traitCollection.preferredContentSizeCategory
+        {
+            configureView()
         }
     }
 
-    private func configureView(for traitCollection: UITraitCollection) {
+    private func configureView() {
         let contentSize = traitCollection.preferredContentSizeCategory
         if contentSize.isAccessibilityCategory {
             stackView.axis = .vertical
@@ -79,3 +105,15 @@ extension SettingsViewController {
         }
     }
 }
+
+#if DEBUG
+@available(iOS 17, *)
+#Preview {
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let vc =
+        storyboard.instantiateViewController(
+            withIdentifier:
+                "SettingsViewController") as! SettingsViewController
+    return vc
+}
+#endif

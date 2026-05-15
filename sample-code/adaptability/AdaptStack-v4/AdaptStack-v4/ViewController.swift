@@ -43,12 +43,11 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        // If you need to support prior to iOS 12,
-        // or you're not building against iOS 17
-        // configure the view here. The traits may
-        // not yet be set but we will get a call to
-        // traitCollectionDidChange to fix things.
-        //        configureView()
+        registerForTraitChanges([UITraitVerticalSizeClass.self]) {
+            (self: Self,
+             _: UITraitCollection) in
+            self.configureView()
+        }
     }
     
     // viewIsAppearing was added in iOS 17 but is back
@@ -57,14 +56,6 @@ final class ViewController: UIViewController {
     override func viewIsAppearing(_ animated: Bool) {
         super.viewIsAppearing(animated)
         configureView()
-    }
-
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        super.traitCollectionDidChange(previousTraitCollection)
-        if previousTraitCollection?.verticalSizeClass !=
-            traitCollection.verticalSizeClass {
-            configureView()
-        }
     }
 
     private func setupView() {
