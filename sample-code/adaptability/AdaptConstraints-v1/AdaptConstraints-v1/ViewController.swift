@@ -1,4 +1,4 @@
-//  Copyright © 2018-2024 Keith Harrison. All rights reserved.
+//  Copyright © 2018-2026 Keith Harrison. All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -142,12 +142,30 @@ extension UIButton {
     static func customButton(title: String, titleColor: UIColor, tintColor: UIColor, background: UIImage?) -> UIButton {
         let button = UIButton(type: .custom)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle(title, for: .normal)
-        button.setTitleColor(titleColor, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 30.0)
-        button.setBackgroundImage(background, for: .normal)
         button.tintColor = tintColor
-        button.contentEdgeInsets = UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
+        
+        var configuration = UIButton.Configuration.plain()
+        var container = AttributeContainer()
+        container.font = UIFont.systemFont(ofSize: 30.0)
+        container.foregroundColor = titleColor
+        configuration.attributedTitle = AttributedString(title, attributes: container)
+        
+        configuration.background.image = background
+        configuration.cornerStyle = .small
+        configuration.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16)
+        button.configuration = configuration
         return button
     }
 }
+
+#if DEBUG
+@available(iOS 17, *)
+#Preview("Portrait", traits: .portrait) {
+    ViewController()
+}
+
+@available(iOS 17, *)
+#Preview("Landscape", traits: .landscapeLeft) {
+   ViewController()
+}
+#endif
