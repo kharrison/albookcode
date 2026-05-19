@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,8 @@
 		533F908D210F6675000B0353 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533F908B210F6675000B0353 /* Main.storyboard */; };
 		533F908F210F6676000B0353 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 533F908E210F6676000B0353 /* Assets.xcassets */; };
 		533F9092210F6676000B0353 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533F9090210F6676000B0353 /* LaunchScreen.storyboard */; };
-		533F90B4210F7941000B0353 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 533F90B2210F7941000B0353 /* Localizable.stringsdict */; };
+		534675852FBC5A2A00D78D6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534675842FBC5A2A00D78D6B /* SceneDelegate.swift */; };
+		5346758E2FBC62E800D78D6B /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 5346758C2FBC62E800D78D6B /* Localizable.stringsdict */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,8 @@
 		533F908E210F6676000B0353 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		533F9091210F6676000B0353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		533F9093210F6676000B0353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		533F90B3210F7941000B0353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = Base; path = Base.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		534675842FBC5A2A00D78D6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5346758D2FBC62E800D78D6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = Base; path = Base.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				533F9087210F6675000B0353 /* AppDelegate.swift */,
+				534675842FBC5A2A00D78D6B /* SceneDelegate.swift */,
 				533F9089210F6675000B0353 /* ViewController.swift */,
 				533F908B210F6675000B0353 /* Main.storyboard */,
-				533F90B2210F7941000B0353 /* Localizable.stringsdict */,
+				5346758C2FBC62E800D78D6B /* Localizable.stringsdict */,
 				533F908E210F6676000B0353 /* Assets.xcassets */,
 				533F9090210F6676000B0353 /* LaunchScreen.storyboard */,
 				533F9093210F6676000B0353 /* Info.plist */,
@@ -95,7 +98,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1610;
+				LastUpgradeCheck = 2650;
 				ORGANIZATIONNAME = "Keith Harrison";
 				TargetAttributes = {
 					533F9083210F6675000B0353 = {
@@ -105,7 +108,6 @@
 				};
 			};
 			buildConfigurationList = 533F907F210F6675000B0353 /* Build configuration list for PBXProject "AdaptText-v1" */;
-			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -113,6 +115,7 @@
 				Base,
 			);
 			mainGroup = 533F907B210F6675000B0353;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 533F9085210F6675000B0353 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,8 +131,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				533F9092210F6676000B0353 /* LaunchScreen.storyboard in Resources */,
+				5346758E2FBC62E800D78D6B /* Localizable.stringsdict in Resources */,
 				533F908F210F6676000B0353 /* Assets.xcassets in Resources */,
-				533F90B4210F7941000B0353 /* Localizable.stringsdict in Resources */,
 				533F908D210F6675000B0353 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +146,7 @@
 			files = (
 				533F908A210F6675000B0353 /* ViewController.swift in Sources */,
 				533F9088210F6675000B0353 /* AppDelegate.swift in Sources */,
+				534675852FBC5A2A00D78D6B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,10 +169,10 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		533F90B2210F7941000B0353 /* Localizable.stringsdict */ = {
+		5346758C2FBC62E800D78D6B /* Localizable.stringsdict */ = {
 			isa = PBXVariantGroup;
 			children = (
-				533F90B3210F7941000B0353 /* Base */,
+				5346758D2FBC62E800D78D6B /* Base */,
 			);
 			name = Localizable.stringsdict;
 			sourceTree = "<group>";
@@ -213,6 +217,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -230,13 +235,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -277,6 +286,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -288,12 +298,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -303,8 +317,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "AdaptText-v1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,8 +335,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "AdaptText-v1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
