@@ -1,4 +1,4 @@
-//  Copyright © 2018 Keith Harrison. All rights reserved.
+//  Copyright © 2018-2026 Keith Harrison. All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -87,3 +87,23 @@ extension ViewController {
         })
     }
 }
+
+#if DEBUG
+@available(iOS 17, *)
+#Preview("Portrait", traits: .portrait) {
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let vc =
+    storyboard.instantiateViewController(withIdentifier:
+    "ViewController") as! ViewController
+    return vc
+}
+
+@available(iOS 17, *)
+#Preview("Landscape", traits: .landscapeLeft) {
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let vc =
+    storyboard.instantiateViewController(withIdentifier:
+    "ViewController") as! ViewController
+    return vc
+}
+#endif

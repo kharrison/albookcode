@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		534675B12FBC9DBF00D78D6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534675B02FBC9DBF00D78D6B /* SceneDelegate.swift */; };
 		53E94E582112FB6D00F4058E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E94E572112FB6D00F4058E /* AppDelegate.swift */; };
 		53E94E5A2112FB6D00F4058E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E94E592112FB6D00F4058E /* ViewController.swift */; };
 		53E94E5D2112FB6D00F4058E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53E94E5B2112FB6D00F4058E /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		534675B02FBC9DBF00D78D6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		53E94E542112FB6D00F4058E /* AdaptSize-v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AdaptSize-v1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E94E572112FB6D00F4058E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53E94E592112FB6D00F4058E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				53E94E572112FB6D00F4058E /* AppDelegate.swift */,
+				534675B02FBC9DBF00D78D6B /* SceneDelegate.swift */,
 				53E94E592112FB6D00F4058E /* ViewController.swift */,
 				53E94E5B2112FB6D00F4058E /* Main.storyboard */,
 				53E94E5E2112FB6D00F4058E /* Assets.xcassets */,
@@ -92,7 +95,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1610;
+				LastUpgradeCheck = 2650;
 				ORGANIZATIONNAME = "Keith Harrison";
 				TargetAttributes = {
 					53E94E532112FB6D00F4058E = {
@@ -102,7 +105,6 @@
 				};
 			};
 			buildConfigurationList = 53E94E4F2112FB6D00F4058E /* Build configuration list for PBXProject "AdaptSize-v1" */;
-			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -110,6 +112,7 @@
 				Base,
 			);
 			mainGroup = 53E94E4B2112FB6D00F4058E;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 53E94E552112FB6D00F4058E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +142,7 @@
 			files = (
 				53E94E5A2112FB6D00F4058E /* ViewController.swift in Sources */,
 				53E94E582112FB6D00F4058E /* AppDelegate.swift in Sources */,
+				534675B12FBC9DBF00D78D6B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +204,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -217,13 +222,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -263,6 +271,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LCC2J94N44;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -274,12 +283,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -289,8 +301,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "AdaptSize-v1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,8 +319,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCC2J94N44;
 				INFOPLIST_FILE = "AdaptSize-v1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
