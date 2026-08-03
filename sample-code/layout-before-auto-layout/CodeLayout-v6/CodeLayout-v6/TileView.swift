@@ -78,3 +78,9 @@ final class TileView: UIView {
         redView.frame = CGRect(x: 2 * padding + itemWidth, y: padding, width: itemWidth, height: itemHeight)
     }
 }
+
+@available(iOS 17, *)
+#Preview {
+    let view = TileView()
+    return view
+}
