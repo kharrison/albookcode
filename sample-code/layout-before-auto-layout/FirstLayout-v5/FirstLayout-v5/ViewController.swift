@@ -33,6 +33,7 @@ final class ViewController: UIViewController {
     @IBOutlet fileprivate var tileView: TileView!
 }
 
+#if DEBUG
 @available(iOS 17, *)
 #Preview("ViewController") {
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -41,3 +42,4 @@ final class ViewController: UIViewController {
     vc.tileView.padding = 20.0
     return vc
 }
+#endif
