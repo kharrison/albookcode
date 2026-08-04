@@ -31,7 +31,9 @@ import UIKit
 final class ViewController: UIViewController {
 }
 
-@available(iOS 17, *)
+#if DEBUG
+import SwiftUI
+
 #Preview {
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let vc =
@@ -39,3 +41,4 @@ final class ViewController: UIViewController {
     "ViewController") as! ViewController
     return vc
 }
+#endif
