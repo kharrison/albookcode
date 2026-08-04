@@ -30,3 +30,14 @@ import UIKit
 
 final class ViewController: UIViewController {
 }
+
+#if DEBUG
+import SwiftUI
+
+#Preview("ViewController") {
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let vc = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+    vc.loadViewIfNeeded()
+    return vc
+}
+#endif

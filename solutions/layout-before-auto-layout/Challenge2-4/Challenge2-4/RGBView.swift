@@ -85,9 +85,12 @@ final class RGBView: UIView {
     }
 }
 
-@available(iOS 17, *)
+#if DEBUG
+import SwiftUI
+
 #Preview("RGBView") {
     let view = RGBView()
     view.spacing = 50
     return view
 }
+#endif

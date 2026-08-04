@@ -52,9 +52,12 @@ final class RootViewController: UIViewController {
     }
 }
 
-@available(iOS 17, *)
-#Preview {
+#if DEBUG
+import SwiftUI
+
+#Preview("RootViewController") {
     let vc = RootViewController()
     vc.greenView.padding = 30
     return vc
 }
+#endif

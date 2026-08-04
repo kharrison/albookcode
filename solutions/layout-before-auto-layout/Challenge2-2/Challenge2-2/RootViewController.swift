@@ -27,6 +27,7 @@
 //  POSSIBILITY OF SUCH DAMAGE.
 
 import UIKit
+import SwiftUI
 
 final class RootViewController: UIViewController {
     private enum ViewMetrics {
@@ -73,3 +74,11 @@ final class RootViewController: UIViewController {
         }
     }
 }
+
+#if DEBUG
+import SWIFTUI
+
+#Preview("RootViewController") {
+    RootViewController()
+}
+#endif
