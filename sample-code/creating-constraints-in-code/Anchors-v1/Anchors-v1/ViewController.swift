@@ -71,7 +71,10 @@ private extension UIView {
     }
 }
 
-@available(iOS 17, *)
+#if DEBUG
+import SwiftUI
+
 #Preview {
     ViewController()
 }
+#endif
