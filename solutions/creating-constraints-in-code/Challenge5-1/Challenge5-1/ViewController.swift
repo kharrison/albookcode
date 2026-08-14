@@ -67,3 +67,11 @@ private extension UIView {
         return view
     }
 }
+
+#if DEBUG
+import SwiftUI
+
+#Preview {
+    ViewController()
+}
+#endif

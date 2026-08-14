@@ -1,4 +1,4 @@
-//  Copyright © 2018-2026 Keith Harrison. All rights reserved.
+//  Copyright © 2026 Keith Harrison. All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -28,6 +28,20 @@
 
 import UIKit
 
-@main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+    var window: UIWindow?
+
+    func scene(
+        _ scene: UIScene, willConnectTo session: UISceneSession,
+        options connectionOptions: UIScene.ConnectionOptions
+    ) {
+        guard let scene = (scene as? UIWindowScene) else {
+            return
+        }
+
+        window = UIWindow(windowScene: scene)
+        window?.backgroundColor = .white
+        window?.rootViewController = ViewController()
+        window?.makeKeyAndVisible()
+    }
 }
