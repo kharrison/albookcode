@@ -1,4 +1,4 @@
-//  Copyright © 2018 Keith Harrison. All rights reserved.
+//  Copyright © 2018-2026 Keith Harrison. All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -38,6 +38,7 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        title = "Title"
     }
 
     private func setupView() {
@@ -72,7 +73,12 @@ private extension UIView {
     }
 }
 
-@available(iOS 17, *)
+#if DEBUG
+import SwiftUI
+
 #Preview {
-    ViewController()
+    let viewController = ViewController()
+    let navigationController = UINavigationController(rootViewController: viewController)
+    return navigationController
 }
+#endif
